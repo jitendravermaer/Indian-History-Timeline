@@ -1,0 +1,2652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian History Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script>
+        function toggleDetails(element) {
+            const details = element.querySelector('.event-details');
+            const btn = element.querySelector('.expand-btn');
+
+            if (details.classList.contains('expanded')) {
+                details.classList.remove('expanded');
+                btn.innerHTML = 'Learn More ▼';
+            } else {
+                details.classList.add('expanded');
+                btn.innerHTML = 'Show Less ▲';
+            }
+        }
+
+        function switchLanguage(lang) {
+            const englishContent = document.querySelectorAll('.english-content');
+            const hindiContent = document.querySelectorAll('.hindi-content');
+            const langBtns = document.querySelectorAll('.lang-btn');
+
+            if (lang === 'hindi') {
+                englishContent.forEach(el => el.classList.remove('active'));
+                hindiContent.forEach(el => el.classList.add('active'));
+                langBtns[0].classList.remove('active');
+                langBtns[1].classList.add('active');
+            } else {
+                englishContent.forEach(el => el.classList.add('active'));
+                hindiContent.forEach(el => el.classList.remove('active'));
+                langBtns[0].classList.add('active');
+                langBtns[1].classList.remove('active');
+            }
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set initial language state
+            switchLanguage('english');
+        });
+    </script>
+    <div class="timeline-container">
+        <div class="header">
+            <div class="english-content">
+                <h1>Indian History Timeline</h1>
+                <p>Journey through 5,300+ years of Indian civilization (3300 BCE - 2025 CE)</p>
+            </div>
+            <div class="hindi-content">
+                <h1>भारतीय इतिहास की समयरेखा</h1>
+                <p>भारतीय सभ्यता के 5,300+ वर्षों की यात्रा (3300 ईसा पूर्व - 2025 ईस्वी)</p>
+            </div>
+            <div class="language-toggle">
+                <button class="lang-btn active" onclick="switchLanguage('english')">English</button>
+                <button class="lang-btn" onclick="switchLanguage('hindi')">हिंदी</button>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <!-- Indus Valley Civilization -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker ancient"></div>
+                <div class="event-card ancient">
+                    <div class="english-content">
+                        <div class="event-date">c. 3300-1300 BCE</div>
+                        <div class="event-title">Indus Valley Civilization</div>
+                        <div class="event-period ancient">Ancient Period</div>
+                        <div class="event-summary">One of the world's earliest urban civilizations flourishes in the
+                            Indus Valley, featuring advanced city planning, drainage systems, and trade networks
+                            spanning from Afghanistan to Gujarat.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">लगभग 3300-1300 ईसा पूर्व</div>
+                        <div class="event-title">सिंधु घाटी सभ्यता</div>
+                        <div class="event-period ancient">प्राचीन काल</div>
+                        <div class="event-summary">विश्व की सबसे पुरानी शहरी सभ्यताओं में से एक सिंधु घाटी में फली-फूली,
+                            जिसमें उन्नत शहर नियोजन, जल निकासी प्रणाली और अफगानिस्तान से गुजरात तक फैले व्यापारिक
+                            नेटवर्क शामिल थे।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Harappan civilization covered over 1.25 million square kilometers, making it the
+                                largest ancient civilization. Major cities included Harappa, Mohenjo-daro, Dholavira,
+                                Kalibangan, and Lothal. These cities featured sophisticated urban planning with
+                                grid-pattern streets, advanced drainage systems, standardized weights and measures, and
+                                impressive public baths. The civilization had a complex trade network extending to
+                                Mesopotamia and Central Asia.
+                            </div>
+                            <div class="hindi-content">
+                                हड़प्पा सभ्यता 1.25 मिलियन वर्ग किलोमीटर में फैली थी, जो इसे सबसे बड़ी प्राचीन सभ्यता
+                                बनाती है। प्रमुख शहरों में हड़प्पा, मोहनजो-दड़ो, धोलावीरा, कालीबंगा, और लोथल शामिल थे।
+                                इन शहरों में ग्रिड पैटर्न की सड़कों, उन्नत जल निकासी प्रणाली, मानकीकृत वजन और माप, और
+                                प्रभावशाली सार्वजनिक स्नानागार के साथ परिष्कृत शहरी नियोजन था।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Harappa Discovery</div>
+                                        <div class="sub-event-date">c. 3300 BCE</div>
+                                        <div class="sub-event-desc">First major Harappan city established with advanced
+                                            urban planning and sophisticated drainage systems.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">हड़प्पा की खोज</div>
+                                        <div class="sub-event-date">लगभग 3300 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">उन्नत शहरी नियोजन और परिष्कृत जल निकासी प्रणाली के
+                                            साथ पहला प्रमुख हड़प्पा शहर स्थापित हुआ।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Mohenjo-daro Peak</div>
+                                        <div class="sub-event-date">c. 2600 BCE</div>
+                                        <div class="sub-event-desc">The Great Bath and advanced city planning reach
+                                            their zenith in this major urban center.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">मोहनजो-दड़ो का चरम</div>
+                                        <div class="sub-event-date">लगभग 2600 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">महान स्नानागार और उन्नत शहर नियोजन इस प्रमुख शहरी
+                                            केंद्र में अपने चरम पर पहुंचे।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Lothal Port City</div>
+                                        <div class="sub-event-date">c. 2400 BCE</div>
+                                        <div class="sub-event-desc">World's first known dock and tidal port established,
+                                            facilitating maritime trade with Mesopotamia.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">लोथल बंदरगाह शहर</div>
+                                        <div class="sub-event-date">लगभग 2400 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">दुनिया का पहला ज्ञात गोदी और ज्वारीय बंदरगाह स्थापित
+                                            हुआ, जो मेसोपोटामिया के साथ समुद्री व्यापार की सुविधा प्रदान करता था।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vedic Period -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker ancient"></div>
+                <div class="event-card ancient">
+                    <div class="english-content">
+                        <div class="event-date">c. 1500-500 BCE</div>
+                        <div class="event-title">Vedic Period</div>
+                        <div class="event-period ancient">Ancient Period</div>
+                        <div class="event-summary">The composition of the Vedas marks the foundation of Hindu
+                            philosophy, establishing religious and social traditions, Sanskrit literature, and the caste
+                            system that continue to influence Indian culture.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">लगभग 1500-500 ईसा पूर्व</div>
+                        <div class="event-title">वैदिक काल</div>
+                        <div class="event-period ancient">प्राचीन काल</div>
+                        <div class="event-summary">वेदों की रचना हिंदू दर्शन की नींव रखती है, धार्मिक और सामाजिक
+                            परंपराओं, संस्कृत साहित्य, और जाति प्रथा की स्थापना करती है जो आज भी भारतीय संस्कृति को
+                            प्रभावित करती हैं।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Vedic period saw the composition of the four Vedas - Rigveda, Samaveda, Yajurveda,
+                                and Atharvaveda - which form the foundation of Hindu philosophy and practice. This era
+                                established the varna system, Sanskrit as a sacred language, and key concepts like
+                                dharma, karma, moksha, and ahimsa. The period is divided into Early Vedic (1500-1000
+                                BCE) and Later Vedic (1000-500 BCE) phases.
+                            </div>
+                            <div class="hindi-content">
+                                वैदिक काल में चार वेदों - ऋग्वेद, सामवेद, यजुर्वेद, और अथर्ववेद की रचना हुई, जो हिंदू
+                                दर्शन और अभ्यास की नींव बनते हैं। इस युग ने वर्ण प्रथा, संस्कृत को पवित्र भाषा, और धर्म,
+                                कर्म, मोक्ष, और अहिंसा जैसी मुख्य अवधारणाओं की स्थापना की।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Rigveda Composition</div>
+                                        <div class="sub-event-date">c. 1500-1200 BCE</div>
+                                        <div class="sub-event-desc">The oldest Veda composed with 1,028 hymns dedicated
+                                            to various deities, establishing foundational Hindu concepts.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">ऋग्वेद की रचना</div>
+                                        <div class="sub-event-date">लगभग 1500-1200 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">विभिन्न देवताओं को समर्पित 1,028 मंत्रों के साथ सबसे
+                                            पुराना वेद रचा गया, जिसने मौलिक हिंदू अवधारणाओं की स्थापना की।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Upanishads Period</div>
+                                        <div class="sub-event-date">c. 800-200 BCE</div>
+                                        <div class="sub-event-desc">Philosophical texts exploring the nature of reality,
+                                            self, and ultimate truth, forming the basis of Vedanta philosophy.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">उपनिषद काल</div>
+                                        <div class="sub-event-date">लगभग 800-200 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">वास्तविकता, आत्मा, और परम सत्य की प्रकृति की खोज
+                                            करने वाले दार्शनिक ग्रंथ, जो वेदांत दर्शन का आधार बनते हैं।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Iron Age Transition</div>
+                                        <div class="sub-event-date">c. 1000 BCE</div>
+                                        <div class="sub-event-desc">Introduction of iron technology revolutionizes
+                                            agriculture and warfare, leading to larger settlements and kingdoms.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">लौह युग संक्रमण</div>
+                                        <div class="sub-event-date">लगभग 1000 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">लोहे की तकनीक के परिचय ने कृषि और युद्ध में क्रांति
+                                            ला दी, जिससे बड़ी बस्तियां और राज्य बने।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ramayana Period -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker ancient"></div>
+                <div class="event-card ancient">
+                    <div class="english-content">
+                        <div class="event-date">c. 1000-800 BCE</div>
+                        <div class="event-title">Ramayana Period</div>
+                        <div class="event-period ancient">Ancient Period</div>
+                        <div class="event-summary">The epic tale of Rama's life, composed by sage Valmiki, establishes
+                            ideals of dharma, duty, and righteousness that become central to Indian culture and moral
+                            philosophy.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">लगभग 1000-800 ईसा पूर्व</div>
+                        <div class="event-title">रामायण काल</div>
+                        <div class="event-period ancient">प्राचीन काल</div>
+                        <div class="event-summary">महर्षि वाल्मीकि द्वारा रचित राम के जीवन की महाकाव्य गाथा, धर्म,
+                            कर्तव्य, और धार्मिकता के आदर्श स्थापित करती है जो भारतीय संस्कृति और नैतिक दर्शन के केंद्र
+                            बन जाते हैं।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Ramayana, consisting of 24,000 verses in seven books (kandas), narrates the life of
+                                Prince Rama of Ayodhya. The epic establishes the concept of 'Maryada Purushottam' (the
+                                ideal man) and explores themes of duty, loyalty, sacrifice, and the triumph of good over
+                                evil. It has profoundly influenced Indian art, literature, theater, and moral values for
+                                over 3,000 years.
+                            </div>
+                            <div class="hindi-content">
+                                रामायण, सात पुस्तकों (कांडों) में 24,000 श्लोकों से युक्त, अयोध्या के राजकुमार राम के
+                                जीवन का वर्णन करता है। यह महाकाव्य 'मर्यादा पुरुषोत्तम' (आदर्श पुरुष) की अवधारणा स्थापित
+                                करता है और कर्तव्य, वफादारी, त्याग, और बुराई पर अच्छाई की जीत के विषयों की खोज करता है।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Valmiki's Composition</div>
+                                        <div class="sub-event-date">c. 1000 BCE</div>
+                                        <div class="sub-event-desc">Sage Valmiki composes the original Ramayana,
+                                            establishing the foundation of Sanskrit epic poetry.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">वाल्मीकि की रचना</div>
+                                        <div class="sub-event-date">लगभग 1000 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">महर्षि वाल्मीकि ने मूल रामायण की रचना की, संस्कृत
+                                            महाकाव्य कविता की नींव स्थापित की।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Ayodhya Kingdom</div>
+                                        <div class="sub-event-date">c. 900 BCE</div>
+                                        <div class="sub-event-desc">The prosperous kingdom of Ayodhya under King
+                                            Dasharatha represents the ideal of righteous governance.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">अयोध्या राज्य</div>
+                                        <div class="sub-event-date">लगभग 900 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">राजा दशरथ के तहत अयोध्या का समृद्ध राज्य धर्मिक शासन
+                                            के आदर्श का प्रतिनिधित्व करता है।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Lanka Campaign</div>
+                                        <div class="sub-event-date">c. 850 BCE</div>
+                                        <div class="sub-event-desc">Rama's expedition to Lanka to rescue Sita symbolizes
+                                            the victory of dharma over adharma.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">लंका अभियान</div>
+                                        <div class="sub-event-date">लगभग 850 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">सीता को बचाने के लिए राम का लंका अभियान अधर्म पर
+                                            धर्म की जीत का प्रतीक है।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mahabharata Period -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker ancient"></div>
+                <div class="event-card ancient">
+                    <div class="english-content">
+                        <div class="event-date">c. 900-400 BCE</div>
+                        <div class="event-title">Mahabharata Period</div>
+                        <div class="event-period ancient">Ancient Period</div>
+                        <div class="event-summary">The world's longest epic poem, attributed to sage Vyasa, chronicles
+                            the Kurukshetra War and contains the Bhagavad Gita, establishing fundamental principles of
+                            dharma, karma, and duty.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">लगभग 900-400 ईसा पूर्व</div>
+                        <div class="event-title">महाभारत काल</div>
+                        <div class="event-period ancient">प्राचीन काल</div>
+                        <div class="event-summary">महर्षि व्यास को श्रेय दिया जाने वाला विश्व का सबसे लंबा महाकाव्य,
+                            कुरुक्षेत्र युद्ध का वर्णन करता है और भगवद्गीता को समाहित करता है, धर्म, कर्म, और कर्तव्य के
+                            मौलिक सिद्धांत स्थापित करता है।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Mahabharata, with over 100,000 verses, is not just an epic but an encyclopedia of
+                                ancient Indian knowledge. It includes the Bhagavad Gita, where Krishna's teachings to
+                                Arjuna form the philosophical foundation of Hindu thought. The epic explores complex
+                                themes of duty, righteousness, power, and the moral ambiguities of life through the
+                                story of the Pandavas and Kauravas.
+                            </div>
+                            <div class="hindi-content">
+                                महाभारत, 100,000 से अधिक श्लोकों के साथ, केवल एक महाकाव्य नहीं बल्कि प्राचीन भारतीय
+                                ज्ञान का एक विश्वकोश है। इसमें भगवद्गीता शामिल है, जहां अर्जुन को कृष्ण की शिक्षाएं
+                                हिंदू विचार की दार्शनिक नींव बनती हैं।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Kurukshetra War</div>
+                                        <div class="sub-event-date">c. 900 BCE</div>
+                                        <div class="sub-event-desc">The great 18-day war between Pandavas and Kauravas
+                                            that determines the fate of Bharatavarsha.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">कुरुक्षेत्र युद्ध</div>
+                                        <div class="sub-event-date">लगभग 900 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">पांडवों और कौरवों के बीच 18 दिन का महान युद्ध जो
+                                            भारतवर्ष के भाग्य का निर्धारण करता है।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Bhagavad Gita</div>
+                                        <div class="sub-event-date">c. 800 BCE</div>
+                                        <div class="sub-event-desc">Krishna's philosophical discourse to Arjuna on duty,
+                                            righteousness, and the nature of reality.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">भगवद्गीता</div>
+                                        <div class="sub-event-date">लगभग 800 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">कर्तव्य, धर्म, और वास्तविकता की प्रकृति पर अर्जुन को
+                                            कृष्ण का दार्शनिक उपदेश।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Vyasa's Compilation</div>
+                                        <div class="sub-event-date">c. 400 BCE</div>
+                                        <div class="sub-event-desc">Sage Vyasa compiles the final version of the
+                                            Mahabharata, creating the world's longest epic poem.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">व्यास का संकलन</div>
+                                        <div class="sub-event-date">लगभग 400 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">महर्षि व्यास ने महाभारत का अंतिम संस्करण संकलित
+                                            किया, विश्व का सबसे लंबा महाकाव्य बनाया।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buddha -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker ancient"></div>
+                <div class="event-card ancient">
+                    <div class="english-content">
+                        <div class="event-date">c. 563-483 BCE</div>
+                        <div class="event-title">Life of Buddha</div>
+                        <div class="event-period ancient">Ancient Period</div>
+                        <div class="event-summary">Siddhartha Gautama attains enlightenment and becomes the Buddha,
+                            founding Buddhism and introducing revolutionary concepts of non-violence, compassion, and
+                            the Middle Path to spiritual liberation.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">लगभग 563-483 ईसा पूर्व</div>
+                        <div class="event-title">बुद्ध का जीवन</div>
+                        <div class="event-period ancient">प्राचीन काल</div>
+                        <div class="event-summary">सिद्धार्थ गौतम ने ज्ञान प्राप्त किया और बुद्ध बने, बौद्ध धर्म की
+                            स्थापना की और अहिंसा, करुणा, और आध्यात्मिक मुक्ति के मध्यम मार्ग की क्रांतिकारी अवधारणाएं
+                            प्रस्तुत कीं।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                Prince Siddhartha Gautama of the Shakya clan left his palace at age 29 to seek answers
+                                to human suffering. After six years of ascetic practices, he attained enlightenment
+                                under the Bodhi tree in Bodh Gaya. His teachings, known as the Four Noble Truths and the
+                                Eightfold Path, emphasized the middle way between extreme asceticism and indulgence,
+                                compassion for all beings, and the impermanent nature of existence.
+                            </div>
+                            <div class="hindi-content">
+                                शाक्य वंश के राजकुमार सिद्धार्थ गौतम ने 29 वर्ष की आयु में मानव दुख के उत्तर खोजने के
+                                लिए अपना महल छोड़ा। छह वर्षों की तपस्या के बाद, उन्होंने बोधगया में बोधि वृक्ष के नीचे
+                                ज्ञान प्राप्त किया।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">The Great Renunciation</div>
+                                        <div class="sub-event-date">c. 534 BCE</div>
+                                        <div class="sub-event-desc">Prince Siddhartha leaves his palace, wife, and
+                                            newborn son to seek spiritual truth and end human suffering.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">महाभिनिष्क्रमण</div>
+                                        <div class="sub-event-date">लगभग 534 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">राजकुमार सिद्धार्थ ने आध्यात्मिक सत्य की खोज और मानव
+                                            दुख को समाप्त करने के लिए अपना महल, पत्नी और नवजात पुत्र को छोड़ दिया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Enlightenment at Bodh Gaya</div>
+                                        <div class="sub-event-date">c. 528 BCE</div>
+                                        <div class="sub-event-desc">Siddhartha attains enlightenment under the Bodhi
+                                            tree, becoming the Buddha and understanding the nature of suffering.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">बोधगया में ज्ञान प्राप्ति</div>
+                                        <div class="sub-event-date">लगभग 528 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">सिद्धार्थ ने बोधि वृक्ष के नीचे ज्ञान प्राप्त किया,
+                                            बुद्ध बने और दुख की प्रकृति को समझा।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">First Sermon at Sarnath</div>
+                                        <div class="sub-event-date">c. 528 BCE</div>
+                                        <div class="sub-event-desc">Buddha delivers his first sermon on the Four Noble
+                                            Truths and Eightfold Path to five ascetics at Deer Park, Sarnath.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">सारनाथ में प्रथम उपदेश</div>
+                                        <div class="sub-event-date">लगभग 528 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">बुद्ध ने सारनाथ के हिरण पार्क में पांच तपस्वियों को
+                                            चार आर्य सत्य और अष्टांगिक मार्ग पर अपना पहला उपदेश दिया।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mahavira and Jainism -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker ancient"></div>
+                <div class="event-card ancient">
+                    <div class="english-content">
+                        <div class="event-date">c. 599-527 BCE</div>
+                        <div class="event-title">Mahavira and Jainism</div>
+                        <div class="event-period ancient">Ancient Period</div>
+                        <div class="event-summary">Vardhamana Mahavira, the 24th Tirthankara, establishes the principles
+                            of Jainism emphasizing ahimsa (non-violence), truth, and spiritual purification through
+                            right conduct.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">लगभग 599-527 ईसा पूर्व</div>
+                        <div class="event-title">महावीर और जैन धर्म</div>
+                        <div class="event-period ancient">प्राचीन काल</div>
+                        <div class="event-summary">वर्धमान महावीर, 24वें तीर्थंकर, ने जैन धर्म के सिद्धांत स्थापित किए
+                            जो अहिंसा, सत्य, और सही आचरण के माध्यम से आध्यात्मिक शुद्धीकरण पर जोर देते हैं।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                Mahavira reformed and revitalized Jainism, which traces its origins to the first
+                                Tirthankara, Rishabhanatha. He emphasized the five main vows: ahimsa (non-violence),
+                                satya (truth), asteya (non-stealing), brahmacharya (celibacy), and aparigraha
+                                (non-possessiveness). Jainism's emphasis on non-violence extended to all living beings
+                                and significantly influenced Indian philosophy and ethics.
+                            </div>
+                            <div class="hindi-content">
+                                महावीर ने जैन धर्म में सुधार और पुनरुत्थान किया, जिसकी उत्पत्ति पहले तीर्थंकर ऋषभनाथ से
+                                मानी जाती है। उन्होंने पांच मुख्य व्रतों पर जोर दिया: अहिंसा, सत्य, अस्तेय, ब्रह्मचर्य,
+                                और अपरिग्रह।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Renunciation</div>
+                                        <div class="sub-event-date">c. 569 BCE</div>
+                                        <div class="sub-event-desc">At age 30, Mahavira renounces worldly life to pursue
+                                            spiritual enlightenment and extreme asceticism.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">त्याग</div>
+                                        <div class="sub-event-date">लगभग 569 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">30 वर्ष की आयु में, महावीर ने आध्यात्मिक ज्ञान और
+                                            चरम तपस्या के लिए सांसारिक जीवन का त्याग किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Kevala Jnana</div>
+                                        <div class="sub-event-date">c. 557 BCE</div>
+                                        <div class="sub-event-desc">After 12 years of severe penance, Mahavira attains
+                                            Kevala Jnana (omniscience) and becomes a Tirthankara.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">केवल ज्ञान</div>
+                                        <div class="sub-event-date">लगभग 557 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">12 वर्षों की कठोर तपस्या के बाद, महावीर ने केवल
+                                            ज्ञान (सर्वज्ञता) प्राप्त किया और तीर्थंकर बने।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event ancient">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Teaching Period</div>
+                                        <div class="sub-event-date">c. 557-527 BCE</div>
+                                        <div class="sub-event-desc">Mahavira spends 30 years teaching Jain principles
+                                            across India, establishing a strong monastic community.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">शिक्षण काल</div>
+                                        <div class="sub-event-date">लगभग 557-527 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">महावीर ने भारत भर में जैन सिद्धांतों को सिखाने में
+                                            30 वर्ष बिताए, एक मजबूत मठवासी समुदाय की स्थापना की।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mauryan Empire -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker classical"></div>
+                <div class="event-card classical">
+                    <div class="english-content">
+                        <div class="event-date">321-185 BCE</div>
+                        <div class="event-title">Mauryan Empire</div>
+                        <div class="event-period classical">Classical Period</div>
+                        <div class="event-summary">Chandragupta Maurya establishes India's first major empire with
+                            Chanakya's guidance, later expanded by Ashoka who promotes Buddhism and non-violence across
+                            the subcontinent after the Kalinga War.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">321-185 ईसा पूर्व</div>
+                        <div class="event-title">मौर्य साम्राज्य</div>
+                        <div class="event-period classical">शास्त्रीय काल</div>
+                        <div class="event-summary">चंद्रगुप्त मौर्य ने चाणक्य के मार्गदर्शन में भारत का पहला बड़ा
+                            साम्राज्य स्थापित किया, जिसे बाद में अशोक ने विस्तार दिया और कलिंग युद्ध के बाद उपमहाद्वीप
+                            में बौद्ध धर्म और अहिंसा को बढ़ावा दिया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Mauryan Empire, founded by Chandragupta Maurya with strategic guidance from Chanakya
+                                (Kautilya), became India's first major empire stretching from Afghanistan to Bengal and
+                                from Kashmir to the Deccan. The empire reached its zenith under Ashoka, who after the
+                                brutal Kalinga War, embraced Buddhism and promoted non-violence, tolerance, and welfare
+                                policies throughout his vast empire.
+                            </div>
+                            <div class="hindi-content">
+                                मौर्य साम्राज्य, जो चंद्रगुप्त मौर्य द्वारा चाणक्य (कौटिल्य) के रणनीतिक मार्गदर्शन में
+                                स्थापित किया गया था, अफगानिस्तान से बंगाल तक और कश्मीर से दक्कन तक फैला भारत का पहला
+                                बड़ा साम्राज्य बना।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event classical">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Chandragupta's Rise</div>
+                                        <div class="sub-event-date">321 BCE</div>
+                                        <div class="sub-event-desc">With Chanakya's help, Chandragupta defeats the Nanda
+                                            dynasty and establishes the Mauryan Empire.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">चंद्रगुप्त का उदय</div>
+                                        <div class="sub-event-date">321 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">चाणक्य की सहायता से, चंद्रगुप्त ने नंद वंश को हराया
+                                            और मौर्य साम्राज्य की स्थापना की।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event classical">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Kalinga War</div>
+                                        <div class="sub-event-date">c. 261 BCE</div>
+                                        <div class="sub-event-desc">Ashoka's brutal conquest of Kalinga leads to his
+                                            transformation and adoption of Buddhism and non-violence.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">कलिंग युद्ध</div>
+                                        <div class="sub-event-date">लगभग 261 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">अशोक की कलिंग की क्रूर विजय उसके परिवर्तन और बौद्ध
+                                            धर्म और अहिंसा को अपनाने का कारण बनी।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event classical">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Ashoka's Edicts</div>
+                                        <div class="sub-event-date">c. 250 BCE</div>
+                                        <div class="sub-event-desc">Ashoka inscribes his moral and administrative
+                                            principles on rocks and pillars across the empire.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">अशोक के शिलालेख</div>
+                                        <div class="sub-event-date">लगभग 250 ईसा पूर्व</div>
+                                        <div class="sub-event-desc">अशोक ने साम्राज्य भर में चट्टानों और स्तंभों पर अपने
+                                            नैतिक और प्रशासनिक सिद्धांत अंकित कराए।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gupta Golden Age -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker classical"></div>
+                <div class="event-card classical">
+                    <div class="english-content">
+                        <div class="event-date">320-550 CE</div>
+                        <div class="event-title">Gupta Golden Age</div>
+                        <div class="event-period classical">Classical Period</div>
+                        <div class="event-summary">The Gupta Empire ushers in a golden age of Indian culture, science,
+                            and arts, with unprecedented achievements in mathematics, astronomy, literature, medicine,
+                            and temple architecture under rulers like Chandragupta II.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">320-550 ईस्वी</div>
+                        <div class="event-title">गुप्त स्वर्ण युग</div>
+                        <div class="event-period classical">शास्त्रीय काल</div>
+                        <div class="event-summary">गुप्त साम्राज्य ने चंद्रगुप्त द्वितीय जैसे शासकों के तहत गणित, खगोल
+                            विज्ञान, साहित्य, चिकित्सा, और मंदिर वास्तुकला में अभूतपूर्व उपलब्धियों के साथ भारतीय
+                            संस्कृति, विज्ञान और कला के स्वर्ण युग की शुरुआत की।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Gupta period is considered the golden age of Indian civilization, marked by
+                                unprecedented achievements in science, mathematics, astronomy, medicine, and arts.
+                                Aryabhata calculated the value of pi and explained lunar eclipses, while the concept of
+                                zero and decimal system were developed. Kalidasa wrote his masterpieces, and the Ajanta
+                                and Ellora caves were carved during this era. The period saw religious tolerance and the
+                                flourishing of Hindu, Buddhist, and Jain traditions.
+                            </div>
+                            <div class="hindi-content">
+                                गुप्त काल को भारतीय सभ्यता का स्वर्ण युग माना जाता है, जो विज्ञान, गणित, खगोल विज्ञान,
+                                चिकित्सा और कला में अभूतपूर्व उपलब्धियों से चिह्नित है। आर्यभट्ट ने पाई का मान निकाला और
+                                चंद्र ग्रहण की व्याख्या की, जबकि शून्य और दशमलव प्रणाली की अवधारणा विकसित की गई।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event classical">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Chandragupta I's Foundation</div>
+                                        <div class="sub-event-date">320 CE</div>
+                                        <div class="sub-event-desc">Chandragupta I establishes the Gupta Empire,
+                                            beginning the golden age of Indian civilization.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">चंद्रगुप्त प्रथम की स्थापना</div>
+                                        <div class="sub-event-date">320 ईस्वी</div>
+                                        <div class="sub-event-desc">चंद्रगुप्त प्रथम ने गुप्त साम्राज्य की स्थापना की,
+                                            भारतीय सभ्यता के स्वर्ण युग की शुरुआत की।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event classical">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Aryabhata's Discoveries</div>
+                                        <div class="sub-event-date">c. 476 CE</div>
+                                        <div class="sub-event-desc">Mathematician-astronomer Aryabhata calculates pi,
+                                            explains eclipses, and proposes Earth's rotation.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">आर्यभट्ट की खोजें</div>
+                                        <div class="sub-event-date">लगभग 476 ईस्वी</div>
+                                        <div class="sub-event-desc">गणितज्ञ-खगोलविद् आर्यभट्ट ने पाई की गणना की, ग्रहणों
+                                            की व्याख्या की, और पृथ्वी के घूर्णन का प्रस्ताव दिया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event classical">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Kalidasa's Literature</div>
+                                        <div class="sub-event-date">c. 400-450 CE</div>
+                                        <div class="sub-event-desc">The great poet Kalidasa writes masterpieces like
+                                            Shakuntala and Meghaduta, epitomizing Sanskrit literature.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">कालिदास का साहित्य</div>
+                                        <div class="sub-event-date">लगभग 400-450 ईस्वी</div>
+                                        <div class="sub-event-desc">महान कवि कालिदास ने शकुंतला और मेघदूत जैसी कृतियां
+                                            लिखीं, संस्कृत साहित्य का प्रतीक बनीं।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chola Empire -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker classical"></div>
+                <div class="event-card classical">
+                    <div class="english-content">
+                        <div class="event-date">850-1279 CE</div>
+                        <div class="event-title">Chola Empire</div>
+                        <div class="event-period classical">Classical Period</div>
+                        <div class="event-summary">The Chola dynasty becomes a dominant maritime power in South India
+                            and Southeast Asia, renowned for their naval expeditions, magnificent temple architecture,
+                            and efficient administrative system.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">850-1279 ईस्वी</div>
+                        <div class="event-title">चोल साम्राज्य</div>
+                        <div class="event-period classical">शास्त्रीय काल</div>
+                        <div class="event-summary">चोल वंश दक्षिण भारत और दक्षिण पूर्व एशिया में एक प्रभावशाली समुद्री
+                            शक्ति बना, जो अपने नौसैनिक अभियानों, भव्य मंदिर वास्तुकला, और कुशल प्रशासनिक प्रणाली के लिए
+                            प्रसिद्ध था।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Chola Empire, with its capital at Thanjavur, was one of the longest-ruling dynasties
+                                in world history. Under rulers like Rajaraja Chola I and Rajendra Chola I, the empire
+                                extended its influence across South India, Sri Lanka, and parts of Southeast Asia. The
+                                Cholas were master builders, creating architectural marvels like the Brihadeeswarar
+                                Temple, and established a powerful navy that dominated the Indian Ocean trade routes.
+                            </div>
+                            <div class="hindi-content">
+                                तंजावुर को राजधानी बनाकर चोल साम्राज्य विश्व इतिहास के सबसे लंबे समय तक शासन करने वाले
+                                राजवंशों में से एक था। राजराज चोल प्रथम और राजेंद्र चोल प्रथम जैसे शासकों के तहत,
+                                साम्राज्य ने दक्षिण भारत, श्रीलंका, और दक्षिण पूर्व एशिया के कुछ हिस्सों में अपना प्रभाव
+                                बढ़ाया।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event classical">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Rajaraja Chola's Reign</div>
+                                        <div class="sub-event-date">985-1014 CE</div>
+                                        <div class="sub-event-desc">Rajaraja Chola I expands the empire and builds the
+                                            magnificent Brihadeeswarar Temple in Thanjavur.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">राजराज चोल का शासन</div>
+                                        <div class="sub-event-date">985-1014 ईस्वी</div>
+                                        <div class="sub-event-desc">राजराज चोल प्रथम ने साम्राज्य का विस्तार किया और
+                                            तंजावुर में भव्य बृहदेश्वर मंदिर का निर्माण कराया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event classical">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Naval Expeditions</div>
+                                        <div class="sub-event-date">1025 CE</div>
+                                        <div class="sub-event-desc">Rajendra Chola I launches successful naval campaigns
+                                            against Srivijaya, extending Chola influence to Southeast Asia.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">नौसैनिक अभियान</div>
+                                        <div class="sub-event-date">1025 ईस्वी</div>
+                                        <div class="sub-event-desc">राजेंद्र चोल प्रथम ने श्रीविजय के खिलाफ सफल नौसैनिक
+                                            अभियान चलाए, दक्षिण पूर्व एशिया में चोल प्रभाव का विस्तार किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event classical">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Administrative Excellence</div>
+                                        <div class="sub-event-date">c. 1000 CE</div>
+                                        <div class="sub-event-desc">The Cholas develop an efficient administrative
+                                            system with local self-governance and detailed revenue records.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">प्रशासनिक उत्कृष्टता</div>
+                                        <div class="sub-event-date">लगभग 1000 ईस्वी</div>
+                                        <div class="sub-event-desc">चोलों ने स्थानीय स्वशासन और विस्तृत राजस्व रिकॉर्ड
+                                            के साथ एक कुशल प्रशासनिक प्रणाली विकसित की।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delhi Sultanate -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker medieval"></div>
+                <div class="event-card medieval">
+                    <div class="english-content">
+                        <div class="event-date">1206-1526 CE</div>
+                        <div class="event-title">Delhi Sultanate</div>
+                        <div class="event-period medieval">Medieval Period</div>
+                        <div class="event-summary">Muslim rulers establish the Delhi Sultanate through five successive
+                            dynasties, introducing Islamic culture, architecture, and administrative systems while
+                            creating a synthesis of Hindu and Islamic traditions.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1206-1526 ईस्वी</div>
+                        <div class="event-title">दिल्ली सल्तनत</div>
+                        <div class="event-period medieval">मध्यकालीन काल</div>
+                        <div class="event-summary">मुस्लिम शासकों ने पांच क्रमिक राजवंशों के माध्यम से दिल्ली सल्तनत की
+                            स्थापना की, इस्लामी संस्कृति, वास्तुकला, और प्रशासनिक प्रणाली का परिचय दिया और हिंदू और
+                            इस्लामी परंपराओं का संश्लेषण बनाया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Delhi Sultanate, comprising five successive dynasties (Slave/Mamluk, Khilji,
+                                Tughluq, Sayyid, and Lodi), marked the beginning of sustained Muslim rule in northern
+                                India. Rulers like Qutb-ud-din Aibak, Alauddin Khilji, and Muhammad bin Tughluq expanded
+                                the sultanate's territory, introduced administrative reforms, and built architectural
+                                marvels like the Qutub Minar and Alai Darwaza.
+                            </div>
+                            <div class="hindi-content">
+                                दिल्ली सल्तनत, जिसमें पांच क्रमिक राजवंश (गुलाम/मामलुक, खिलजी, तुगलक, सैयद, और लोदी)
+                                शामिल थे, उत्तरी भारत में निरंतर मुस्लिम शासन की शुरुआत को चिह्नित करती है।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event medieval">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Slave Dynasty</div>
+                                        <div class="sub-event-date">1206-1290 CE</div>
+                                        <div class="sub-event-desc">Qutb-ud-din Aibak establishes the first Muslim
+                                            dynasty in Delhi and begins construction of Qutub Minar.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">गुलाम वंश</div>
+                                        <div class="sub-event-date">1206-1290 ईस्वी</div>
+                                        <div class="sub-event-desc">कुतुब-उद-दीन ऐबक ने दिल्ली में पहला मुस्लिम राजवंश
+                                            स्थापित किया और कुतुब मीनार का निर्माण शुरू किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event medieval">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Alauddin Khilji's Reforms</div>
+                                        <div class="sub-event-date">1296-1316 CE</div>
+                                        <div class="sub-event-desc">Alauddin Khilji implements market reforms, price
+                                            controls, and successfully defends against Mongol invasions.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">अलाउद्दीन खिलजी के सुधार</div>
+                                        <div class="sub-event-date">1296-1316 ईस्वी</div>
+                                        <div class="sub-event-desc">अलाउद्दीन खिलजी ने बाजार सुधार, मूल्य नियंत्रण लागू
+                                            किया, और मंगोल आक्रमणों से सफलतापूर्वक बचाव किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event medieval">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Muhammad bin Tughluq's Experiments</div>
+                                        <div class="sub-event-date">1325-1351 CE</div>
+                                        <div class="sub-event-desc">Muhammad bin Tughluq attempts radical reforms
+                                            including capital transfer and token currency, with mixed results.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">मुहम्मद बिन तुगलक के प्रयोग</div>
+                                        <div class="sub-event-date">1325-1351 ईस्वी</div>
+                                        <div class="sub-event-desc">मुहम्मद बिन तुगलक ने राजधानी स्थानांतरण और टोकन
+                                            मुद्रा सहित कट्टरपंथी सुधारों का प्रयास किया, मिश्रित परिणामों के साथ।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vijayanagara Empire -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker medieval"></div>
+                <div class="event-card medieval">
+                    <div class="english-content">
+                        <div class="event-date">1336-1646 CE</div>
+                        <div class="event-title">Vijayanagara Empire</div>
+                        <div class="event-period medieval">Medieval Period</div>
+                        <div class="event-summary">The Vijayanagara Empire emerges as the last great Hindu kingdom of
+                            South India, serving as a bulwark against Islamic invasions and fostering a renaissance of
+                            Hindu culture, art, and architecture.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1336-1646 ईस्वी</div>
+                        <div class="event-title">विजयनगर साम्राज्य</div>
+                        <div class="event-period medieval">मध्यकालीन काल</div>
+                        <div class="event-summary">विजयनगर साम्राज्य दक्षिण भारत के अंतिम महान हिंदू राज्य के रूप में
+                            उभरा, इस्लामी आक्रमणों के खिलाफ एक बल्वार्क के रूप में काम करता है और हिंदू संस्कृति, कला,
+                            और वास्तुकला के पुनर्जागरण को बढ़ावा देता है।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                Founded by Harihara I and Bukka Raya I, the Vijayanagara Empire became the dominant
+                                power in South India for over 300 years. The empire reached its zenith under
+                                Krishnadevaraya, who was a great patron of arts and literature. The capital city of
+                                Hampi became one of the world's largest cities, renowned for its magnificent temples,
+                                palaces, and sophisticated urban planning. The empire successfully resisted Muslim
+                                invasions until the Battle of Talikota in 1565.
+                            </div>
+                            <div class="hindi-content">
+                                हरिहर प्रथम और बुक्का राय प्रथम द्वारा स्थापित, विजयनगर साम्राज्य 300 से अधिक वर्षों तक
+                                दक्षिण भारत की प्रभावशाली शक्ति बना रहा। साम्राज्य कृष्णदेवराय के तहत अपने चरम पर
+                                पहुंचा, जो कला और साहित्य के महान संरक्षक थे।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event medieval">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Foundation by Sangama Brothers</div>
+                                        <div class="sub-event-date">1336 CE</div>
+                                        <div class="sub-event-desc">Harihara I and Bukka Raya I establish the
+                                            Vijayanagara Empire with sage Vidyaranya's guidance.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">संगम भाइयों द्वारा स्थापना</div>
+                                        <div class="sub-event-date">1336 ईस्वी</div>
+                                        <div class="sub-event-desc">हरिहर प्रथम और बुक्का राय प्रथम ने महर्षि विद्यारण्य
+                                            के मार्गदर्शन में विजयनगर साम्राज्य की स्थापना की।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event medieval">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Krishnadevaraya's Golden Age</div>
+                                        <div class="sub-event-date">1509-1529 CE</div>
+                                        <div class="sub-event-desc">Under Krishnadevaraya, the empire reaches its
+                                            cultural and territorial zenith, with Hampi becoming a magnificent capital.
+                                        </div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">कृष्णदेवराय का स्वर्ण युग</div>
+                                        <div class="sub-event-date">1509-1529 ईस्वी</div>
+                                        <div class="sub-event-desc">कृष्णदेवराय के तहत, साम्राज्य अपने सांस्कृतिक और
+                                            क्षेत्रीय चरम पर पहुंचा, हम्पी एक भव्य राजधानी बनी।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event medieval">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Battle of Talikota</div>
+                                        <div class="sub-event-date">1565 CE</div>
+                                        <div class="sub-event-desc">The decisive defeat by the Deccan Sultanates leads
+                                            to the decline of the Vijayanagara Empire.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">तालीकोटा का युद्ध</div>
+                                        <div class="sub-event-date">1565 ईस्वी</div>
+                                        <div class="sub-event-desc">दक्कन सल्तनतों द्वारा निर्णायक हार विजयनगर साम्राज्य
+                                            के पतन का कारण बनी।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mughal Empire -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker mughal"></div>
+                <div class="event-card mughal">
+                    <div class="english-content">
+                        <div class="event-date">1526-1857 CE</div>
+                        <div class="event-title">Mughal Empire</div>
+                        <div class="event-period mughal">Mughal Period</div>
+                        <div class="event-summary">Babur establishes the Mughal Empire after victory at Panipat, which
+                            under Akbar, Jahangir, Shah Jahan, and others creates architectural marvels like the Taj
+                            Mahal while promoting cultural synthesis and religious tolerance.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1526-1857 ईस्वी</div>
+                        <div class="event-title">मुगल साम्राज्य</div>
+                        <div class="event-period mughal">मुगल काल</div>
+                        <div class="event-summary">बाबर ने पानीपत में जीत के बाद मुगल साम्राज्य की स्थापना की, जिसने
+                            अकबर, जहांगीर, शाहजहाँ और अन्य के तहत ताजमहल जैसे स्थापत्य चमत्कार बनाए और सांस्कृतिक
+                            संश्लेषण और धार्मिक सहिष्णुता को बढ़ावा दिया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Mughal Empire, founded by Babur after his victory at the First Battle of Panipat in
+                                1526, became one of the world's wealthiest and most powerful empires. Under Akbar's
+                                rule, the empire expanded significantly and promoted religious tolerance through
+                                policies like Din-i-Ilahi. Shah Jahan built the Taj Mahal and other architectural
+                                marvels, while Aurangzeb's orthodox policies and constant warfare led to the empire's
+                                gradual decline.
+                            </div>
+                            <div class="hindi-content">
+                                मुगल साम्राज्य, जो बाबर द्वारा 1526 में पानीपत की पहली लड़ाई में अपनी जीत के बाद स्थापित
+                                किया गया था, दुनिया के सबसे धनी और शक्तिशाली साम्राज्यों में से एक बना। अकबर के शासन
+                                में, साम्राज्य का काफी विस्तार हुआ और दीन-ए-इलाही जैसी नीतियों के माध्यम से धार्मिक
+                                सहिष्णुता को बढ़ावा दिया गया।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event mughal">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">First Battle of Panipat</div>
+                                        <div class="sub-event-date">1526 CE</div>
+                                        <div class="sub-event-desc">Babur defeats Ibrahim Lodi using gunpowder and
+                                            artillery, establishing Mughal rule in India.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">पानीपत की पहली लड़ाई</div>
+                                        <div class="sub-event-date">1526 ईस्वी</div>
+                                        <div class="sub-event-desc">बाबर ने बारूद और तोपखाने का उपयोग करके इब्राहिम लोदी
+                                            को हराया, भारत में मुगल शासन स्थापित किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event mughal">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Akbar's Religious Policy</div>
+                                        <div class="sub-event-date">1556-1605 CE</div>
+                                        <div class="sub-event-desc">Akbar promotes religious tolerance, abolishes jizya
+                                            tax, and establishes Din-i-Ilahi to unite different faiths.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">अकबर की धार्मिक नीति</div>
+                                        <div class="sub-event-date">1556-1605 ईस्वी</div>
+                                        <div class="sub-event-desc">अकबर ने धार्मिक सहिष्णुता को बढ़ावा दिया, जज़िया कर
+                                            समाप्त किया, और विभिन्न धर्मों को एकजुट करने के लिए दीन-ए-इलाही स्थापित
+                                            किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event mughal">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Taj Mahal Construction</div>
+                                        <div class="sub-event-date">1632-1653 CE</div>
+                                        <div class="sub-event-desc">Shah Jahan builds the Taj Mahal as a mausoleum for
+                                            his wife Mumtaz Mahal, creating an architectural masterpiece.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">ताजमहल निर्माण</div>
+                                        <div class="sub-event-date">1632-1653 ईस्वी</div>
+                                        <div class="sub-event-desc">शाहजहाँ ने अपनी पत्नी मुमताज महल के लिए मकबरे के रूप
+                                            में ताजमहल बनवाया, एक स्थापत्य कृति का निर्माण किया।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maratha Empire -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker medieval"></div>
+                <div class="event-card medieval">
+                    <div class="english-content">
+                        <div class="event-date">1674-1818 CE</div>
+                        <div class="event-title">Maratha Empire</div>
+                        <div class="event-period medieval">Medieval Period</div>
+                        <div class="event-summary">Shivaji Maharaj establishes the Maratha Empire, which becomes the
+                            dominant power in 18th century India, challenging Mughal authority and pioneering guerrilla
+                            warfare tactics before falling to the British.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1674-1818 ईस्वी</div>
+                        <div class="event-title">मराठा साम्राज्य</div>
+                        <div class="event-period medieval">मध्यकालीन काल</div>
+                        <div class="event-summary">शिवाजी महाराज ने मराठा साम्राज्य की स्थापना की, जो 18वीं सदी में भारत
+                            की प्रभावशाली शक्ति बना, मुगल सत्ता को चुनौती दी और गुरिल्ला युद्ध की रणनीति का अग्रणी बना,
+                            ब्रिटिश के हाथों गिरने से पहले।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Maratha Empire, founded by Shivaji Maharaj in 1674, grew to become the dominant
+                                power in 18th century India. Shivaji pioneered guerrilla warfare tactics and established
+                                a strong naval force. After his death, the empire was ruled by the Peshwas, who expanded
+                                Maratha influence across India. The empire controlled much of the Indian subcontinent
+                                until its defeat by the British in the Third Anglo-Maratha War (1817-1818).
+                            </div>
+                            <div class="hindi-content">
+                                1674 में शिवाजी महाराज द्वारा स्थापित मराठा साम्राज्य 18वीं सदी में भारत की प्रभावशाली
+                                शक्ति बनकर उभरा। शिवाजी ने गुरिल्ला युद्ध की रणनीति का अग्रणी काम किया और एक मजबूत
+                                नौसेना बल स्थापित किया।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event medieval">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Shivaji's Coronation</div>
+                                        <div class="sub-event-date">1674 CE</div>
+                                        <div class="sub-event-desc">Shivaji Maharaj is crowned as Chhatrapati, formally
+                                            establishing the Maratha Empire at Raigad Fort.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">शिवाजी का राज्याभिषेक</div>
+                                        <div class="sub-event-date">1674 ईस्वी</div>
+                                        <div class="sub-event-desc">शिवाजी महाराज का रायगढ़ किले में छत्रपति के रूप में
+                                            राज्याभिषेक हुआ, औपचारिक रूप से मराठा साम्राज्य की स्थापना हुई।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event medieval">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Peshwa Administration</div>
+                                        <div class="sub-event-date">1713-1818 CE</div>
+                                        <div class="sub-event-desc">The Peshwas become the de facto rulers, expanding
+                                            Maratha power across India through military campaigns and alliances.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">पेशवा प्रशासन</div>
+                                        <div class="sub-event-date">1713-1818 ईस्वी</div>
+                                        <div class="sub-event-desc">पेशवा वास्तविक शासक बने, सैन्य अभियानों और गठबंधनों
+                                            के माध्यम से भारत भर में मराठा शक्ति का विस्तार किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event medieval">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Third Battle of Panipat</div>
+                                        <div class="sub-event-date">1761 CE</div>
+                                        <div class="sub-event-desc">The Marathas suffer a devastating defeat against
+                                            Ahmad Shah Abdali, marking the beginning of their decline.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">पानीपत की तीसरी लड़ाई</div>
+                                        <div class="sub-event-date">1761 ईस्वी</div>
+                                        <div class="sub-event-desc">मराठों को अहमद शाह अब्दाली के खिलाफ विनाशकारी हार का
+                                            सामना करना पड़ा, जो उनके पतन की शुरुआत का संकेत था।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Battle of Plassey -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker colonial"></div>
+                <div class="event-card colonial">
+                    <div class="english-content">
+                        <div class="event-date">1757 CE</div>
+                        <div class="event-title">Battle of Plassey</div>
+                        <div class="event-period colonial">Colonial Period</div>
+                        <div class="event-summary">The British East India Company defeats the Nawab of Bengal through
+                            strategic alliances and betrayal, marking the beginning of British colonial rule in India
+                            and the end of Mughal dominance in Bengal.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1757 ईस्वी</div>
+                        <div class="event-title">प्लासी का युद्ध</div>
+                        <div class="event-period colonial">औपनिवेशिक काल</div>
+                        <div class="event-summary">ब्रिटिश ईस्ट इंडिया कंपनी ने रणनीतिक गठबंधन और विश्वासघात के माध्यम
+                            से बंगाल के नवाब को हराया, जो भारत में ब्रिटिश औपनिवेशिक शासन की शुरुआत और बंगाल में मुगल
+                            प्रभुत्व के अंत को चिह्नित करता है।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Battle of Plassey, fought between the British East India Company led by Robert Clive
+                                and the Nawab of Bengal Siraj-ud-Daulah, marked a turning point in Indian history. The
+                                British victory, aided by Mir Jafar's betrayal and the conspiracy of Bengali merchants
+                                and nobles, gave them access to Bengal's vast revenues and established their political
+                                dominance in India. This battle laid the foundation for 190 years of British colonial
+                                rule.
+                            </div>
+                            <div class="hindi-content">
+                                प्लासी का युद्ध, जो रॉबर्ट क्लाइव के नेतृत्व में ब्रिटिश ईस्ट इंडिया कंपनी और बंगाल के
+                                नवाब सिराज-उद-दौला के बीच लड़ा गया था, भारतीय इतिहास में एक महत्वपूर्ण मोड़ था।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Black Hole of Calcutta</div>
+                                        <div class="sub-event-date">1756 CE</div>
+                                        <div class="sub-event-desc">Siraj-ud-Daulah captures Fort William, leading to
+                                            the alleged Black Hole incident that inflames British sentiment.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">कलकत्ता का ब्लैक होल</div>
+                                        <div class="sub-event-date">1756 ईस्वी</div>
+                                        <div class="sub-event-desc">सिराज-उद-दौला ने फोर्ट विलियम पर कब्जा किया, जिससे
+                                            कथित ब्लैक होल घटना हुई जिसने ब्रिटिश भावनाओं को भड़काया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Mir Jafar's Conspiracy</div>
+                                        <div class="sub-event-date">1757 CE</div>
+                                        <div class="sub-event-desc">Mir Jafar, the Nawab's commander, secretly allies
+                                            with the British, ensuring their victory at Plassey.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">मीर जाफर का षड्यंत्र</div>
+                                        <div class="sub-event-date">1757 ईस्वी</div>
+                                        <div class="sub-event-desc">नवाब के सेनापति मीर जाफर ने गुप्त रूप से ब्रिटिश के
+                                            साथ गठबंधन किया, प्लासी में उनकी जीत सुनिश्चित की।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Dual Government System</div>
+                                        <div class="sub-event-date">1765 CE</div>
+                                        <div class="sub-event-desc">The British establish the Dual Government system in
+                                            Bengal, gaining revenue collection rights while maintaining puppet rulers.
+                                        </div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">द्वैध शासन प्रणाली</div>
+                                        <div class="sub-event-date">1765 ईस्वी</div>
+                                        <div class="sub-event-desc">ब्रिटिश ने बंगाल में द्वैध शासन प्रणाली स्थापित की,
+                                            कठपुतली शासकों को बनाए रखते हुए राजस्व संग्रह अधिकार प्राप्त किए।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anglo-Mysore Wars -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker colonial"></div>
+                <div class="event-card colonial">
+                    <div class="english-content">
+                        <div class="event-date">1767-1799 CE</div>
+                        <div class="event-title">Anglo-Mysore Wars</div>
+                        <div class="event-period colonial">Colonial Period</div>
+                        <div class="event-summary">Four wars between the Kingdom of Mysore and the British East India
+                            Company, featuring the heroic resistance of Hyder Ali and Tipu Sultan against British
+                            expansion in South India.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1767-1799 ईस्वी</div>
+                        <div class="event-title">आंग्ल-मैसूर युद्ध</div>
+                        <div class="event-period colonial">औपनिवेशिक काल</div>
+                        <div class="event-summary">मैसूर राज्य और ब्रिटिश ईस्ट इंडिया कंपनी के बीच चार युद्ध, जिसमें
+                            दक्षिण भारत में ब्रिटिश विस्तार के खिलाफ हैदर अली और टीपू सुल्तान का वीरतापूर्ण प्रतिरोध
+                            शामिल है।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Anglo-Mysore Wars were a series of four conflicts between the Kingdom of Mysore and
+                                the British East India Company. Hyder Ali and his son Tipu Sultan, known as the "Tiger
+                                of Mysore," fiercely resisted British expansion. Tipu Sultan was one of the first Indian
+                                rulers to understand the threat of British colonialism and sought alliances with France
+                                and the Ottoman Empire. The wars ended with Tipu Sultan's death in the Fourth
+                                Anglo-Mysore War (1799), leading to British control over South India.
+                            </div>
+                            <div class="hindi-content">
+                                आंग्ल-मैसूर युद्ध मैसूर राज्य और ब्रिटिश ईस्ट इंडिया कंपनी के बीच चार संघर्षों की
+                                श्रृंखला थी। हैदर अली और उनके पुत्र टीपू सुल्तान, जो "मैसूर के शेर" के नाम से जाने जाते
+                                थे, ने ब्रिटिश विस्तार का कड़ा प्रतिरोध किया।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">First Anglo-Mysore War</div>
+                                        <div class="sub-event-date">1767-1769 CE</div>
+                                        <div class="sub-event-desc">Hyder Ali successfully resists British expansion and
+                                            forces them to sign the Treaty of Madras.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">प्रथम आंग्ल-मैसूर युद्ध</div>
+                                        <div class="sub-event-date">1767-1769 ईस्वी</div>
+                                        <div class="sub-event-desc">हैदर अली ने सफलतापूर्वक ब्रिटिश विस्तार का प्रतिरोध
+                                            किया और उन्हें मद्रास की संधि पर हस्ताक्षर करने के लिए मजबूर किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Tipu Sultan's Innovations</div>
+                                        <div class="sub-event-date">1782-1799 CE</div>
+                                        <div class="sub-event-desc">Tipu Sultan introduces military innovations
+                                            including iron-cased rockets and seeks international alliances against the
+                                            British.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">टीपू सुल्तान के नवाचार</div>
+                                        <div class="sub-event-date">1782-1799 ईस्वी</div>
+                                        <div class="sub-event-desc">टीपू सुल्तान ने लोहे के आवरण वाले रॉकेट सहित सैन्य
+                                            नवाचार पेश किए और ब्रिटिश के खिलाफ अंतर्राष्ट्रीय गठबंधन की मांग की।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Siege of Seringapatam</div>
+                                        <div class="sub-event-date">1799 CE</div>
+                                        <div class="sub-event-desc">Tipu Sultan dies defending his capital, ending
+                                            Mysore's resistance and establishing British dominance in South India.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">श्रीरंगपट्टनम की घेराबंदी</div>
+                                        <div class="sub-event-date">1799 ईस्वी</div>
+                                        <div class="sub-event-desc">टीपू सुल्तान अपनी राजधानी की रक्षा करते हुए मारे गए,
+                                            मैसूर के प्रतिरोध का अंत हुआ और दक्षिण भारत में ब्रिटिश प्रभुत्व स्थापित
+                                            हुआ।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- First War of Independence (Continuing from where we left off) -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker colonial"></div>
+                <div class="event-card colonial">
+                    <div class="english-content">
+                        <div class="event-date">1857 CE</div>
+                        <div class="event-title">First War of Independence</div>
+                        <div class="event-period colonial">Colonial Period</div>
+                        <div class="event-summary">The Great Revolt of 1857, also known as the Sepoy Mutiny, represents
+                            the first major uprising against British rule, led by heroes like Rani Lakshmibai, Bahadur
+                            Shah Zafar, and Tatya Tope, though ultimately unsuccessful.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1857 ईस्वी</div>
+                        <div class="event-title">प्रथम स्वतंत्रता संग्राम</div>
+                        <div class="event-period colonial">औपनिवेशिक काल</div>
+                        <div class="event-summary">1857 का महान विद्रोह, जिसे सिपाही विद्रोह भी कहा जाता है, रानी
+                            लक्ष्मीबाई, बहादुर शाह जफर, और तात्या टोपे जैसे वीरों के नेतृत्व में ब्रिटिश शासन के खिलाफ
+                            पहला बड़ा विद्रोह था, हालांकि अंततः असफल रहा।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The 1857 uprising began as a sepoy mutiny over the use of cartridges greased with cow
+                                and pig fat, offensive to both Hindu and Muslim soldiers. It quickly spread across
+                                northern and central India, with leaders like Rani Lakshmibai of Jhansi, Bahadur Shah
+                                Zafar, Tatya Tope, Nana Saheb, and Begum Hazrat Mahal leading the resistance. Though
+                                unsuccessful, it marked the end of East India Company rule and the beginning of direct
+                                British Crown administration.
+                            </div>
+                            <div class="hindi-content">
+                                1857 का विद्रोह गाय और सुअर की चर्बी से लिपटे कारतूसों के उपयोग को लेकर सिपाही विद्रोह
+                                के रूप में शुरू हुआ, जो हिंदू और मुस्लिम दोनों सैनिकों के लिए आपत्तिजनक था। यह जल्दी ही
+                                उत्तरी और मध्य भारत में फैल गया।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Meerut Uprising</div>
+                                        <div class="sub-event-date">May 10, 1857</div>
+                                        <div class="sub-event-desc">The revolt begins in Meerut when sepoys refuse to
+                                            use the controversial cartridges and march to Delhi.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">मेरठ विद्रोह</div>
+                                        <div class="sub-event-date">10 मई, 1857</div>
+                                        <div class="sub-event-desc">मेरठ में विद्रोह शुरू हुआ जब सिपाहियों ने विवादास्पद
+                                            कारतूसों का उपयोग करने से इनकार कर दिया और दिल्ली की ओर कूच किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Siege of Jhansi</div>
+                                        <div class="sub-event-date">March-April 1858</div>
+                                        <div class="sub-event-desc">Rani Lakshmibai heroically defends Jhansi against
+                                            British forces, becoming a symbol of resistance.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">झांसी की घेराबंदी</div>
+                                        <div class="sub-event-date">मार्च-अप्रैल 1858</div>
+                                        <div class="sub-event-desc">रानी लक्ष्मीबाई ने ब्रिटिश सेना के खिलाफ झांसी की
+                                            वीरतापूर्वक रक्षा की, प्रतिरोध का प्रतीक बनीं।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">End of Company Rule</div>
+                                        <div class="sub-event-date">1858</div>
+                                        <div class="sub-event-desc">The Government of India Act transfers power from
+                                            East India Company to the British Crown.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">कंपनी शासन का अंत</div>
+                                        <div class="sub-event-date">1858</div>
+                                        <div class="sub-event-desc">भारत सरकार अधिनियम ने ईस्ट इंडिया कंपनी से ब्रिटिश
+                                            क्राउन को सत्ता स्थानांतरित की।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indian National Congress Formation -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker independence"></div>
+                <div class="event-card independence">
+                    <div class="english-content">
+                        <div class="event-date">1885 CE</div>
+                        <div class="event-title">Formation of Indian National Congress</div>
+                        <div class="event-period independence">Independence Era</div>
+                        <div class="event-summary">A.O. Hume establishes the Indian National Congress with Indian
+                            leaders, beginning the organized political movement for Indian self-governance and eventual
+                            independence from British rule.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1885 ईस्वी</div>
+                        <div class="event-title">भारतीय राष्ट्रीय कांग्रेस का गठन</div>
+                        <div class="event-period independence">स्वतंत्रता युग</div>
+                        <div class="event-summary">ए.ओ. ह्यूम ने भारतीय नेताओं के साथ भारतीय राष्ट्रीय कांग्रेस की
+                            स्थापना की, भारतीय स्वशासन और ब्रिटिश शासन से अंतिम स्वतंत्रता के लिए संगठित राजनीतिक आंदोलन
+                            की शुरुआत की।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Indian National Congress was founded in Bombay with 72 delegates from across India.
+                                Initially focused on moderate reforms and greater Indian participation in governance, it
+                                evolved into the primary vehicle for the independence movement. Early leaders included
+                                Dadabhai Naoroji, Gopal Krishna Gokhale, and Bal Gangadhar Tilak, who represented
+                                different approaches to achieving self-rule.
+                            </div>
+                            <div class="hindi-content">
+                                भारतीय राष्ट्रीय कांग्रेस की स्थापना बंबई में भारत भर के 72 प्रतिनिधियों के साथ हुई।
+                                शुरू में मध्यम सुधारों और शासन में अधिक भारतीय भागीदारी पर केंद्रित, यह स्वतंत्रता
+                                आंदोलन का प्राथमिक माध्यम बन गया।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">First Session in Bombay</div>
+                                        <div class="sub-event-date">December 28-31, 1885</div>
+                                        <div class="sub-event-desc">W.C. Bonnerjee presides over the first Congress
+                                            session with 72 delegates discussing constitutional reforms.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">बंबई में पहला अधिवेशन</div>
+                                        <div class="sub-event-date">28-31 दिसंबर, 1885</div>
+                                        <div class="sub-event-desc">डब्ल्यू.सी. बनर्जी ने 72 प्रतिनिधियों के साथ पहले
+                                            कांग्रेस अधिवेशन की अध्यक्षता की, संवैधानिक सुधारों पर चर्चा की।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Moderate Phase</div>
+                                        <div class="sub-event-date">1885-1905</div>
+                                        <div class="sub-event-desc">Early Congress focuses on constitutional methods,
+                                            petitions, and gradual reforms under moderate leaders.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">नरमपंथी चरण</div>
+                                        <div class="sub-event-date">1885-1905</div>
+                                        <div class="sub-event-desc">प्रारंभिक कांग्रेस नरमपंथी नेताओं के तहत संवैधानिक
+                                            तरीकों, याचिकाओं और क्रमिक सुधारों पर केंद्रित थी।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Extremist Emergence</div>
+                                        <div class="sub-event-date">1905</div>
+                                        <div class="sub-event-desc">Leaders like Tilak, Lala Lajpat Rai, and Bipin
+                                            Chandra Pal advocate for more aggressive methods.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">गरमपंथी उदय</div>
+                                        <div class="sub-event-date">1905</div>
+                                        <div class="sub-event-desc">तिलक, लाला लाजपत राय, और बिपिन चंद्र पाल जैसे नेताओं
+                                            ने अधिक आक्रामक तरीकों की वकालत की।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partition of Bengal -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker colonial"></div>
+                <div class="event-card colonial">
+                    <div class="english-content">
+                        <div class="event-date">1905 CE</div>
+                        <div class="event-title">Partition of Bengal</div>
+                        <div class="event-period colonial">Colonial Period</div>
+                        <div class="event-summary">Lord Curzon partitions Bengal along religious lines, sparking the
+                            Swadeshi movement and widespread protests that eventually force the British to annul the
+                            partition in 1911.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1905 ईस्वी</div>
+                        <div class="event-title">बंगाल विभाजन</div>
+                        <div class="event-period colonial">औपनिवेशिक काल</div>
+                        <div class="event-summary">लॉर्ड कर्जन ने धार्मिक आधार पर बंगाल का विभाजन किया, स्वदेशी आंदोलन
+                            और व्यापक विरोध प्रदर्शन शुरू हुए जिसने अंततः ब्रिटिश को 1911 में विभाजन रद्द करने के लिए
+                            मजबूर किया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The partition divided Bengal into two provinces: Bengal (with a Hindu majority) and
+                                Eastern Bengal and Assam (with a Muslim majority). This sparked the Swadeshi movement,
+                                promoting Indian-made goods and boycotting British products. The movement saw the
+                                emergence of revolutionary activities and strengthened nationalist sentiment across
+                                India.
+                            </div>
+                            <div class="hindi-content">
+                                विभाजन ने बंगाल को दो प्रांतों में बांटा: बंगाल (हिंदू बहुमत के साथ) और पूर्वी बंगाल और
+                                असम (मुस्लिम बहुमत के साथ)। इससे स्वदेशी आंदोलन शुरू हुआ, भारतीय वस्तुओं को बढ़ावा दिया
+                                और ब्रिटिश उत्पादों का बहिष्कार किया।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Swadeshi Movement</div>
+                                        <div class="sub-event-date">1905-1911</div>
+                                        <div class="sub-event-desc">Mass boycott of British goods and promotion of
+                                            Indian industries, led by leaders like Surendranath Banerjee.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">स्वदेशी आंदोलन</div>
+                                        <div class="sub-event-date">1905-1911</div>
+                                        <div class="sub-event-desc">सुरेंद्रनाथ बनर्जी जैसे नेताओं के नेतृत्व में
+                                            ब्रिटिश वस्तुओं का व्यापक बहिष्कार और भारतीय उद्योगों को बढ़ावा।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Revolutionary Activities</div>
+                                        <div class="sub-event-date">1905-1910</div>
+                                        <div class="sub-event-desc">Secret societies like Anushilan Samiti and Jugantar
+                                            emerge, promoting armed resistance against British rule.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">क्रांतिकारी गतिविधियां</div>
+                                        <div class="sub-event-date">1905-1910</div>
+                                        <div class="sub-event-desc">अनुशीलन समिति और युगांतर जैसी गुप्त संस्थाएं उभरीं,
+                                            ब्रिटिश शासन के खिलाफ सशस्त्र प्रतिरोध को बढ़ावा दिया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Annulment of Partition</div>
+                                        <div class="sub-event-date">1911</div>
+                                        <div class="sub-event-desc">Due to sustained protests, King George V announces
+                                            the annulment of Bengal partition and transfer of capital to Delhi.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">विभाजन रद्दीकरण</div>
+                                        <div class="sub-event-date">1911</div>
+                                        <div class="sub-event-desc">निरंतर विरोध के कारण, राजा जॉर्ज पंचम ने बंगाल
+                                            विभाजन रद्द करने और राजधानी दिल्ली स्थानांतरित करने की घोषणा की।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jallianwala Bagh Massacre -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker colonial"></div>
+                <div class="event-card colonial">
+                    <div class="english-content">
+                        <div class="event-date">April 13, 1919</div>
+                        <div class="event-title">Jallianwala Bagh Massacre</div>
+                        <div class="event-period colonial">Colonial Period</div>
+                        <div class="event-summary">General Dyer orders troops to fire on unarmed civilians gathered at
+                            Jallianwala Bagh in Amritsar, killing hundreds and marking a turning point in Indian
+                            attitudes toward British rule.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">13 अप्रैल, 1919</div>
+                        <div class="event-title">जलियांवाला बाग हत्याकांड</div>
+                        <div class="event-period colonial">औपनिवेशिक काल</div>
+                        <div class="event-summary">जनरल डायर ने अमृतसर के जलियांवाला बाग में एकत्रित निहत्थे नागरिकों पर
+                            गोली चलाने का आदेश दिया, सैकड़ों लोग मारे गए और ब्रिटिश शासन के प्रति भारतीय दृष्टिकोण में
+                            एक महत्वपूर्ण मोड़ आया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                On Baisakhi day, thousands of people gathered at Jallianwala Bagh for a peaceful protest
+                                against the Rowlatt Act. General Reginald Dyer ordered his troops to fire without
+                                warning on the trapped crowd, killing at least 379 people and wounding over 1,200. This
+                                brutal act shocked the nation and turned many moderate Indians against British rule,
+                                including Rabindranath Tagore who returned his knighthood in protest.
+                            </div>
+                            <div class="hindi-content">
+                                बैसाखी के दिन, हजारों लोग रॉलेट एक्ट के खिलाफ शांतिपूर्ण विरोध के लिए जलियांवाला बाग में
+                                एकत्रित हुए। जनरल रेजिनाल्ड डायर ने अपने सैनिकों को फंसी हुई भीड़ पर बिना चेतावनी के
+                                गोली चलाने का आदेश दिया, कम से कम 379 लोग मारे गए और 1,200 से अधिक घायल हुए।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Rowlatt Act Protests</div>
+                                        <div class="sub-event-date">March 1919</div>
+                                        <div class="sub-event-desc">Nationwide protests against the repressive Rowlatt
+                                            Act that allowed detention without trial.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">रॉलेट एक्ट विरोध</div>
+                                        <div class="sub-event-date">मार्च 1919</div>
+                                        <div class="sub-event-desc">दमनकारी रॉलेट एक्ट के खिलाफ राष्ट्रव्यापी विरोध जो
+                                            बिना मुकदमे के हिरासत की अनुमति देता था।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">The Massacre</div>
+                                        <div class="sub-event-date">April 13, 1919</div>
+                                        <div class="sub-event-desc">General Dyer's troops fire 1,650 rounds into the
+                                            trapped crowd for 10 minutes without warning.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">नरसंहार</div>
+                                        <div class="sub-event-date">13 अप्रैल, 1919</div>
+                                        <div class="sub-event-desc">जनरल डायर के सैनिकों ने बिना चेतावनी के 10 मिनट तक
+                                            फंसी हुई भीड़ पर 1,650 राउंड गोलियां चलाईं।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event colonial">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">National Outrage</div>
+                                        <div class="sub-event-date">1919-1920</div>
+                                        <div class="sub-event-desc">The massacre galvanizes Indian opinion against
+                                            British rule, with Tagore returning his knighthood in protest.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">राष्ट्रीय आक्रोश</div>
+                                        <div class="sub-event-date">1919-1920</div>
+                                        <div class="sub-event-desc">नरसंहार ने ब्रिटिश शासन के खिलाफ भारतीय राय को मजबूत
+                                            किया, टैगोर ने विरोध में अपनी नाइटहुड वापस की।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gandhi's Non-Cooperation Movement -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker independence"></div>
+                <div class="event-card independence">
+                    <div class="english-content">
+                        <div class="event-date">1920-1922 CE</div>
+                        <div class="event-title">Non-Cooperation Movement</div>
+                        <div class="event-period independence">Independence Era</div>
+                        <div class="event-summary">Mahatma Gandhi launches the first mass civil disobedience movement,
+                            advocating non-violent resistance, boycott of British institutions, and promotion of khadi
+                            and swadeshi goods.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1920-1922 ईस्वी</div>
+                        <div class="event-title">असहयोग आंदोलन</div>
+                        <div class="event-period independence">स्वतंत्रता युग</div>
+                        <div class="event-summary">महात्मा गांधी ने पहला जन सविनय अवज्ञा आंदोलन शुरू किया, अहिंसक
+                            प्रतिरोध, ब्रिटिश संस्थानों के बहिष्कार, और खादी और स्वदेशी वस्तुओं को बढ़ावा देने की वकालत
+                            की।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                Gandhi's Non-Cooperation Movement marked the beginning of mass participation in the
+                                freedom struggle. The movement included boycott of British goods, educational
+                                institutions, and law courts, surrender of titles and honors, and promotion of hand-spun
+                                khadi. The movement was suspended after the Chauri Chaura incident in 1922, where
+                                protesters turned violent.
+                            </div>
+                            <div class="hindi-content">
+                                गांधी के असहयोग आंदोलन ने स्वतंत्रता संग्राम में जन भागीदारी की शुरुआत की। आंदोलन में
+                                ब्रिटिश वस्तुओं, शैक्षणिक संस्थानों, और न्यायालयों का बहिष्कार, उपाधियों और सम्मानों का
+                                त्याग, और हाथ से काते गए खादी को बढ़ावा शामिल था।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Khilafat Movement Alliance</div>
+                                        <div class="sub-event-date">1920</div>
+                                        <div class="sub-event-desc">Gandhi allies with the Khilafat movement to unite
+                                            Hindus and Muslims against British rule.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">खिलाफत आंदोलन गठबंधन</div>
+                                        <div class="sub-event-date">1920</div>
+                                        <div class="sub-event-desc">गांधी ने ब्रिटिश शासन के खिलाफ हिंदुओं और मुसलमानों
+                                            को एकजुट करने के लिए खिलाफत आंदोलन के साथ गठबंधन किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Mass Participation</div>
+                                        <div class="sub-event-date">1920-1921</div>
+                                        <div class="sub-event-desc">Millions participate in boycotts, with students
+                                            leaving schools and lawyers abandoning courts.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">जन भागीदारी</div>
+                                        <div class="sub-event-date">1920-1921</div>
+                                        <div class="sub-event-desc">लाखों लोगों ने बहिष्कार में भाग लिया, छात्रों ने
+                                            स्कूल छोड़े और वकीलों ने अदालतें छोड़ीं।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Chauri Chaura Incident</div>
+                                        <div class="sub-event-date">February 5, 1922</div>
+                                        <div class="sub-event-desc">Violence at Chauri Chaura leads Gandhi to suspend
+                                            the movement, emphasizing commitment to non-violence.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">चौरी चौरा घटना</div>
+                                        <div class="sub-event-date">5 फरवरी, 1922</div>
+                                        <div class="sub-event-desc">चौरी चौरा में हिंसा के कारण गांधी ने आंदोलन स्थगित
+                                            कर दिया, अहिंसा के प्रति प्रतिबद्धता पर जोर दिया।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salt March -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker independence"></div>
+                <div class="event-card independence">
+                    <div class="english-content">
+                        <div class="event-date">March 12 - April 6, 1930</div>
+                        <div class="event-title">Salt March (Dandi March)</div>
+                        <div class="event-period independence">Independence Era</div>
+                        <div class="event-summary">Gandhi leads the historic 240-mile march from Sabarmati Ashram to
+                            Dandi, breaking the salt law and launching the Civil Disobedience Movement that captures
+                            global attention.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">12 मार्च - 6 अप्रैल, 1930</div>
+                        <div class="event-title">नमक मार्च (दांडी मार्च)</div>
+                        <div class="event-period independence">स्वतंत्रता युग</div>
+                        <div class="event-summary">गांधी ने साबरमती आश्रम से दांडी तक ऐतिहासिक 240 मील का मार्च किया,
+                            नमक कानून तोड़ा और सविनय अवज्ञा आंदोलन शुरू किया जिसने वैश्विक ध्यान आकर्षित किया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Salt March was a pivotal moment in India's freedom struggle. Gandhi, along with 78
+                                followers, walked 240 miles over 24 days to the coastal village of Dandi, where he
+                                symbolically broke the British salt monopoly by picking up a handful of salt. This
+                                simple act sparked nationwide civil disobedience, with millions participating in
+                                salt-making and other forms of protest.
+                            </div>
+                            <div class="hindi-content">
+                                नमक मार्च भारत के स्वतंत्रता संग्राम में एक महत्वपूर्ण क्षण था। गांधी ने 78 अनुयायियों
+                                के साथ 24 दिनों में 240 मील चलकर तटीय गांव दांडी पहुंचे, जहां उन्होंने मुट्ठी भर नमक
+                                उठाकर ब्रिटिश नमक एकाधिकार को प्रतीकात्मक रूप से तोड़ा।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Start from Sabarmati</div>
+                                        <div class="sub-event-date">March 12, 1930</div>
+                                        <div class="sub-event-desc">Gandhi begins the march with 78 satyagrahis from
+                                            Sabarmati Ashram at dawn.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">साबरमती से शुरुआत</div>
+                                        <div class="sub-event-date">12 मार्च, 1930</div>
+                                        <div class="sub-event-desc">गांधी ने भोर में साबरमती आश्रम से 78 सत्याग्रहियों
+                                            के साथ मार्च शुरू किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Breaking the Salt Law</div>
+                                        <div class="sub-event-date">April 6, 1930</div>
+                                        <div class="sub-event-desc">Gandhi picks up salt at Dandi beach, symbolically
+                                            breaking the British salt monopoly.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">नमक कानून तोड़ना</div>
+                                        <div class="sub-event-date">6 अप्रैल, 1930</div>
+                                        <div class="sub-event-desc">गांधी ने दांडी समुद्र तट पर नमक उठाया, प्रतीकात्मक
+                                            रूप से ब्रिटिश नमक एकाधिकार तोड़ा।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Nationwide Civil Disobedience</div>
+                                        <div class="sub-event-date">April 1930</div>
+                                        <div class="sub-event-desc">The march triggers mass civil disobedience across
+                                            India, with millions making salt illegally.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">राष्ट्रव्यापी सविनय अवज्ञा</div>
+                                        <div class="sub-event-date">अप्रैल 1930</div>
+                                        <div class="sub-event-desc">मार्च ने भारत भर में जन सविनय अवज्ञा को प्रेरित
+                                            किया, लाखों लोगों ने अवैध रूप से नमक बनाया।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quit India Movement -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker independence"></div>
+                <div class="event-card independence">
+                    <div class="english-content">
+                        <div class="event-date">August 8, 1942</div>
+                        <div class="event-title">Quit India Movement</div>
+                        <div class="event-period independence">Independence Era</div>
+                        <div class="event-summary">Gandhi launches the final mass movement against British rule with the
+                            slogan "Do or Die," demanding immediate independence and leading to widespread arrests and
+                            underground resistance.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">8 अगस्त, 1942</div>
+                        <div class="event-title">भारत छोड़ो आंदोलन</div>
+                        <div class="event-period independence">स्वतंत्रता युग</div>
+                        <div class="event-summary">गांधी ने "करो या मरो" के नारे के साथ ब्रिटिश शासन के खिलाफ अंतिम जन
+                            आंदोलन शुरू किया, तत्काल स्वतंत्रता की मांग की और व्यापक गिरफ्तारियों और भूमिगत प्रतिरोध का
+                            कारण बना।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Quit India Movement was launched during World War II, demanding immediate British
+                                withdrawal from India. Gandhi's "Do or Die" speech at the Gowalia Tank Maidan in Bombay
+                                marked the beginning of the most widespread rebellion since 1857. Though most leaders
+                                were arrested immediately, the movement continued underground with widespread strikes,
+                                sabotage, and parallel governments in some areas.
+                            </div>
+                            <div class="hindi-content">
+                                भारत छोड़ो आंदोलन द्वितीय विश्व युद्ध के दौरान शुरू किया गया था, भारत से तत्काल ब्रिटिश
+                                वापसी की मांग करते हुए। बंबई के गोवालिया टैंक मैदान में गांधी के "करो या मरो" भाषण ने
+                                1857 के बाद सबसे व्यापक विद्रोह की शुरुआत की।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">"Do or Die" Speech</div>
+                                        <div class="sub-event-date">August 8, 1942</div>
+                                        <div class="sub-event-desc">Gandhi delivers his famous speech at Gowalia Tank
+                                            Maidan, calling for immediate British withdrawal.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">"करो या मरो" भाषण</div>
+                                        <div class="sub-event-date">8 अगस्त, 1942</div>
+                                        <div class="sub-event-desc">गांधी ने गोवालिया टैंक मैदान में अपना प्रसिद्ध भाषण
+                                            दिया, तत्काल ब्रिटिश वापसी का आह्वान किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Mass Arrests</div>
+                                        <div class="sub-event-date">August 9, 1942</div>
+                                        <div class="sub-event-desc">British authorities arrest Gandhi and other Congress
+                                            leaders, sparking nationwide protests.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">व्यापक गिरफ्तारियां</div>
+                                        <div class="sub-event-date">9 अगस्त, 1942</div>
+                                        <div class="sub-event-desc">ब्रिटिश अधिकारियों ने गांधी और अन्य कांग्रेसी नेताओं
+                                            को गिरफ्तार किया, राष्ट्रव्यापी विरोध प्रदर्शन शुरू हुए।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Underground Movement</div>
+                                        <div class="sub-event-date">1942-1944</div>
+                                        <div class="sub-event-desc">Young leaders like Aruna Asaf Ali and Jayaprakash
+                                            Narayan lead underground resistance activities.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">भूमिगत आंदोलन</div>
+                                        <div class="sub-event-date">1942-1944</div>
+                                        <div class="sub-event-desc">अरुणा आसफ अली और जयप्रकाश नारायण जैसे युवा नेताओं ने
+                                            भूमिगत प्रतिरोध गतिविधियों का नेतृत्व किया।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Independence and Partition -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker independence"></div>
+                <div class="event-card independence">
+                    <div class="english-content">
+                        <div class="event-date">August 15, 1947</div>
+                        <div class="event-title">Independence and Partition</div>
+                        <div class="event-period independence">Independence Era</div>
+                        <div class="event-summary">India gains independence from British rule but is partitioned into
+                            India and Pakistan, leading to massive displacement, communal violence, and the world's
+                            largest migration in history.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">15 अगस्त, 1947</div>
+                        <div class="event-title">स्वतंत्रता और विभाजन</div>
+                        <div class="event-period independence">स्वतंत्रता युग</div>
+                        <div class="event-summary">भारत को ब्रिटिश शासन से स्वतंत्रता मिली लेकिन इसका विभाजन भारत और
+                            पाकिस्तान में हुआ, जिससे बड़े पैमाने पर विस्थापन, सांप्रदायिक हिंसा, और इतिहास का सबसे बड़ा
+                            प्रवासन हुआ।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Indian Independence Act 1947 created two dominions - India and Pakistan. The
+                                partition led to one of the largest mass migrations in history, with approximately 14
+                                million people crossing borders. Widespread communal riots resulted in hundreds of
+                                thousands of deaths. Mahatma Gandhi was assassinated on January 30, 1948, by Nathuram
+                                Godse, shocking the newly independent nation.
+                            </div>
+                            <div class="hindi-content">
+                                भारतीय स्वतंत्रता अधिनियम 1947 ने दो डोमिनियन बनाए - भारत और पाकिस्तान। विभाजन ने इतिहास
+                                के सबसे बड़े जन प्रवासन में से एक को जन्म दिया, लगभग 1.4 करोड़ लोगों ने सीमाएं पार कीं।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Mountbatten Plan</div>
+                                        <div class="sub-event-date">June 3, 1947</div>
+                                        <div class="sub-event-desc">Lord Mountbatten announces the partition plan,
+                                            dividing British India into two nations.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">माउंटबेटन योजना</div>
+                                        <div class="sub-event-date">3 जून, 1947</div>
+                                        <div class="sub-event-desc">लॉर्ड माउंटबेटन ने विभाजन योजना की घोषणा की, ब्रिटिश
+                                            भारत को दो राष्ट्रों में बांटा।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Mass Migration</div>
+                                        <div class="sub-event-date">August-December 1947</div>
+                                        <div class="sub-event-desc">14 million people migrate across borders in the
+                                            largest population exchange in history.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">जन प्रवासन</div>
+                                        <div class="sub-event-date">अगस्त-दिसंबर 1947</div>
+                                        <div class="sub-event-desc">इतिहास के सबसे बड़े जनसंख्या आदान-प्रदान में 1.4
+                                            करोड़ लोगों ने सीमाएं पार कीं।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event independence">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Gandhi's Assassination</div>
+                                        <div class="sub-event-date">January 30, 1948</div>
+                                        <div class="sub-event-desc">Mahatma Gandhi is assassinated by Nathuram Godse
+                                            during a prayer meeting in New Delhi.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">गांधी की हत्या</div>
+                                        <div class="sub-event-date">30 जनवरी, 1948</div>
+                                        <div class="sub-event-desc">नई दिल्ली में प्रार्थना सभा के दौरान नाथूराम गोडसे
+                                            द्वारा महात्मा गांधी की हत्या कर दी गई।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Constitution Adoption -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker modern"></div>
+                <div class="event-card modern">
+                    <div class="english-content">
+                        <div class="event-date">January 26, 1950</div>
+                        <div class="event-title">Constitution of India</div>
+                        <div class="event-period modern">Modern India</div>
+                        <div class="event-summary">The Constitution of India comes into effect, making India a republic
+                            with Dr. Rajendra Prasad as the first President, establishing fundamental rights, directive
+                            principles, and democratic governance.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">26 जनवरी, 1950</div>
+                        <div class="event-title">भारत का संविधान</div>
+                        <div class="event-period modern">आधुनिक भारत</div>
+                        <div class="event-summary">भारत का संविधान लागू हुआ, डॉ. राजेंद्र प्रसाद को पहले राष्ट्रपति के
+                            रूप में भारत को गणराज्य बनाया, मौलिक अधिकार, निदेशक सिद्धांत, और लोकतांत्रिक शासन स्थापित
+                            किया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Constitution of India, drafted by the Constituent Assembly under Dr. B.R. Ambedkar's
+                                chairmanship, is the world's longest written constitution. It established India as a
+                                sovereign, socialist, secular, democratic republic with fundamental rights, directive
+                                principles of state policy, and a federal structure with a strong center. The date
+                                January 26 was chosen to honor the Purna Swaraj declaration of 1930.
+                            </div>
+                            <div class="hindi-content">
+                                डॉ. बी.आर. अंबेडकर की अध्यक्षता में संविधान सभा द्वारा तैयार किया गया भारत का संविधान
+                                दुनिया का सबसे लंबा लिखित संविधान है। इसने भारत को मौलिक अधिकारों, राज्य नीति के निदेशक
+                                सिद्धांतों, और मजबूत केंद्र के साथ संघीय ढांचे के साथ एक संप्रभु, समाजवादी,
+                                धर्मनिरपेक्ष, लोकतांत्रिक गणराज्य के रूप में स्थापित किया।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event modern">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Constituent Assembly</div>
+                                        <div class="sub-event-date">1946-1949</div>
+                                        <div class="sub-event-desc">The Constituent Assembly, led by Dr. Ambedkar,
+                                            drafts the Constitution over 2 years, 11 months, and 18 days.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">संविधान सभा</div>
+                                        <div class="sub-event-date">1946-1949</div>
+                                        <div class="sub-event-desc">डॉ. अंबेडकर के नेतृत्व में संविधान सभा ने 2 साल, 11
+                                            महीने और 18 दिनों में संविधान का मसौदा तैयार किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event modern">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Fundamental Rights</div>
+                                        <div class="sub-event-date">1950</div>
+                                        <div class="sub-event-desc">The Constitution guarantees fundamental rights
+                                            including equality, freedom, and protection against discrimination.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">मौलिक अधिकार</div>
+                                        <div class="sub-event-date">1950</div>
+                                        <div class="sub-event-desc">संविधान समानता, स्वतंत्रता, और भेदभाव के खिलाफ
+                                            सुरक्षा सहित मौलिक अधिकारों की गारंटी देता है।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event modern">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Republic Day</div>
+                                        <div class="sub-event-date">January 26, 1950</div>
+                                        <div class="sub-event-desc">India becomes a republic with Dr. Rajendra Prasad as
+                                            the first President, celebrating the first Republic Day.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">गणतंत्र दिवस</div>
+                                        <div class="sub-event-date">26 जनवरी, 1950</div>
+                                        <div class="sub-event-desc">डॉ. राजेंद्र प्रसाद के साथ भारत गणराज्य बना, पहला
+                                            गणतंत्र दिवस मनाया गया।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Green Revolution -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker modern"></div>
+                <div class="event-card modern">
+                    <div class="english-content">
+                        <div class="event-date">1960s-1970s</div>
+                        <div class="event-title">Green Revolution</div>
+                        <div class="event-period modern">Modern India</div>
+                        <div class="event-summary">Dr. M.S. Swaminathan leads the Green Revolution, introducing
+                            high-yielding variety seeds, modern farming techniques, and irrigation, transforming India
+                            from food-deficient to food-surplus nation.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1960-1970 के दशक</div>
+                        <div class="event-title">हरित क्रांति</div>
+                        <div class="event-period modern">आधुनिक भारत</div>
+                        <div class="event-summary">डॉ. एम.एस. स्वामीनाथन ने हरित क्रांति का नेतृत्व किया, उच्च उत्पादन
+                            किस्म के बीज, आधुनिक कृषि तकनीक, और सिंचाई का परिचय दिया, भारत को खाद्य-अभावग्रस्त से
+                            खाद्य-अधिशेष राष्ट्र में बदल दिया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Green Revolution transformed Indian agriculture through the introduction of
+                                high-yielding variety (HYV) seeds, chemical fertilizers, pesticides, and improved
+                                irrigation. Punjab, Haryana, and western Uttar Pradesh became the epicenters of this
+                                transformation. India achieved food self-sufficiency and became a net exporter of food
+                                grains, ending centuries of famines and food shortages.
+                            </div>
+                            <div class="hindi-content">
+                                हरित क्रांति ने उच्च उत्पादन किस्म (एचवाईवी) के बीज, रासायनिक उर्वरक, कीटनाशक, और बेहतर
+                                सिंचाई के परिचय के माध्यम से भारतीय कृषि को बदल दिया। पंजाब, हरियाणा, और पश्चिमी उत्तर
+                                प्रदेश इस परिवर्तन के केंद्र बने।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event modern">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">HYV Seeds Introduction</div>
+                                        <div class="sub-event-date">1960s</div>
+                                        <div class="sub-event-desc">High-yielding variety seeds of wheat and rice are
+                                            introduced, dramatically increasing crop productivity.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">एचवाईवी बीजों का परिचय</div>
+                                        <div class="sub-event-date">1960 के दशक</div>
+                                        <div class="sub-event-desc">गेहूं और चावल के उच्च उत्पादन किस्म के बीज पेश किए
+                                            गए, फसल उत्पादकता में नाटकीय वृद्धि हुई।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event modern">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Food Self-Sufficiency</div>
+                                        <div class="sub-event-date">1970s</div>
+                                        <div class="sub-event-desc">India achieves food self-sufficiency, ending
+                                            dependence on food imports and the threat of famines.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">खाद्य आत्मनिर्भरता</div>
+                                        <div class="sub-event-date">1970 के दशक</div>
+                                        <div class="sub-event-desc">भारत ने खाद्य आत्मनिर्भरता हासिल की, खाद्य आयात पर
+                                            निर्भरता और अकाल के खतरे को समाप्त किया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event modern">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Punjab Model</div>
+                                        <div class="sub-event-date">1970s</div>
+                                        <div class="sub-event-desc">Punjab becomes the model state for the Green
+                                            Revolution, achieving the highest agricultural productivity in India.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">पंजाब मॉडल</div>
+                                        <div class="sub-event-date">1970 के दशक</div>
+                                        <div class="sub-event-desc">पंजाब हरित क्रांति के लिए मॉडल राज्य बना, भारत में
+                                            सर्वोच्च कृषि उत्पादकता हासिल की।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Economic Liberalization -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker modern"></div>
+                <div class="event-card modern">
+                    <div class="english-content">
+                        <div class="event-date">1991 CE</div>
+                        <div class="event-title">Economic Liberalization</div>
+                        <div class="event-period modern">Modern India</div>
+                        <div class="event-summary">India initiates major economic reforms under P.V. Narasimha Rao and
+                            Finance Minister Manmohan Singh, opening up the economy, ending the License Raj, and
+                            ushering in rapid economic growth.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1991 ईस्वी</div>
+                        <div class="event-title">आर्थिक उदारीकरण</div>
+                        <div class="event-period modern">आधुनिक भारत</div>
+                        <div class="event-summary">भारत ने पी.वी. नरसिम्हा राव और वित्त मंत्री मनमोहन सिंह के तहत प्रमुख
+                            आर्थिक सुधार शुरू किए, अर्थव्यवस्था को खोला, लाइसेंस राज समाप्त किया, और तीव्र आर्थिक विकास
+                            की शुरुआत की।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The 1991 economic crisis forced India to abandon its socialist economic model and
+                                embrace market-oriented reforms. The liberalization included deregulation,
+                                privatization, and opening up to foreign investment. This transformed India into one of
+                                the world's fastest-growing economies, led to the rise of the IT sector, and created a
+                                new middle class. The reforms marked the end of the "License Raj" and the beginning of
+                                India's integration with the global economy.
+                            </div>
+                            <div class="hindi-content">
+                                1991 के आर्थिक संकट ने भारत को अपने समाजवादी आर्थिक मॉडल को छोड़ने और बाजार-उन्मुख
+                                सुधारों को अपनाने के लिए मजबूर किया। उदारीकरण में विनियमन, निजीकरण, और विदेशी निवेश के
+                                लिए खुलना शामिल था।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event modern">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Balance of Payments Crisis</div>
+                                        <div class="sub-event-date">1991</div>
+                                        <div class="sub-event-desc">India faces a severe balance of payments crisis,
+                                            forcing economic reforms and IMF assistance.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">भुगतान संतुलन संकट</div>
+                                        <div class="sub-event-date">1991</div>
+                                        <div class="sub-event-desc">भारत को गंभीर भुगतान संतुलन संकट का सामना करना पड़ा,
+                                            आर्थिक सुधार और आईएमएफ सहायता के लिए मजबूर हुआ।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event modern">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">LPG Reforms</div>
+                                        <div class="sub-event-date">1991</div>
+                                        <div class="sub-event-desc">Liberalization, Privatization, and Globalization
+                                            (LPG) reforms are introduced, ending the License Raj.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">एलपीजी सुधार</div>
+                                        <div class="sub-event-date">1991</div>
+                                        <div class="sub-event-desc">उदारीकरण, निजीकरण, और वैश्वीकरण (एलपीजी) सुधार पेश
+                                            किए गए, लाइसेंस राज समाप्त हुआ।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event modern">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">IT Sector Boom</div>
+                                        <div class="sub-event-date">1990s</div>
+                                        <div class="sub-event-desc">The liberalization leads to the rapid growth of
+                                            India's IT and software services industry.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">आईटी क्षेत्र की तेजी</div>
+                                        <div class="sub-event-date">1990 के दशक</div>
+                                        <div class="sub-event-desc">उदारीकरण ने भारत के आईटी और सॉफ्टवेयर सेवा उद्योग की
+                                            तीव्र वृद्धि का नेतृत्व किया।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nuclear Tests -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker contemporary"></div>
+                <div class="event-card contemporary">
+                    <div class="english-content">
+                        <div class="event-date">1998 CE</div>
+                        <div class="event-title">Nuclear Tests - Pokhran II</div>
+                        <div class="event-period contemporary">Contemporary India</div>
+                        <div class="event-summary">India conducts nuclear tests under Prime Minister Atal Bihari
+                            Vajpayee, declaring itself a nuclear weapons state and changing regional power dynamics in
+                            South Asia.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">1998 ईस्वी</div>
+                        <div class="event-title">परमाणु परीक्षण - पोखरण II</div>
+                        <div class="event-period contemporary">समकालीन भारत</div>
+                        <div class="event-summary">प्रधानमंत्री अटल बिहारी वाजपेयी के तहत भारत ने परमाणु परीक्षण किए,
+                            खुद को परमाणु हथियार संपन्न राष्ट्र घोषित किया और दक्षिण एशिया में क्षेत्रीय शक्ति संतुलन को
+                            बदल दिया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                On May 11 and 13, 1998, India conducted five nuclear tests at Pokhran, Rajasthan, under
+                                the code name "Operation Shakti." This made India the sixth country to openly declare
+                                nuclear weapons capability after the US, Russia, UK, France, and China. The tests led to
+                                international sanctions but established India as a major nuclear power and changed South
+                                Asian geopolitics permanently.
+                            </div>
+                            <div class="hindi-content">
+                                11 और 13 मई, 1998 को, भारत ने राजस्थान के पोखरण में "ऑपरेशन शक्ति" के कोड नाम से पांच
+                                परमाणु परीक्षण किए। इससे भारत अमेरिका, रूस, ब्रिटेन, फ्रांस, और चीन के बाद खुले तौर पर
+                                परमाणु हथियार क्षमता घोषित करने वाला छठा देश बन गया।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Operation Shakti</div>
+                                        <div class="sub-event-date">May 11, 1998</div>
+                                        <div class="sub-event-desc">India conducts three nuclear tests, including a
+                                            thermonuclear device, at Pokhran test site.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">ऑपरेशन शक्ति</div>
+                                        <div class="sub-event-date">11 मई, 1998</div>
+                                        <div class="sub-event-desc">भारत ने पोखरण परीक्षण स्थल पर थर्मोन्यूक्लियर उपकरण
+                                            सहित तीन परमाणु परीक्षण किए।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">International Sanctions</div>
+                                        <div class="sub-event-date">May 1998</div>
+                                        <div class="sub-event-desc">The international community imposes economic
+                                            sanctions on India following the nuclear tests.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">अंतर्राष्ट्रीय प्रतिबंध</div>
+                                        <div class="sub-event-date">मई 1998</div>
+                                        <div class="sub-event-desc">परमाणु परीक्षणों के बाद अंतर्राष्ट्रीय समुदाय ने
+                                            भारत पर आर्थिक प्रतिबंध लगाए।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Pakistan's Response</div>
+                                        <div class="sub-event-date">May 28, 1998</div>
+                                        <div class="sub-event-desc">Pakistan conducts its own nuclear tests in response,
+                                            escalating regional nuclear tensions.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">पाकिस्तान की प्रतिक्रिया</div>
+                                        <div class="sub-event-date">28 मई, 1998</div>
+                                        <div class="sub-event-desc">पाकिस्तान ने जवाब में अपने परमाणु परीक्षण किए,
+                                            क्षेत्रीय परमाणु तनाव बढ़ाया।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital India Revolution -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker contemporary"></div>
+                <div class="event-card contemporary">
+                    <div class="english-content">
+                        <div class="event-date">2015-2020 CE</div>
+                        <div class="event-title">Digital India Revolution</div>
+                        <div class="event-period contemporary">Contemporary India</div>
+                        <div class="event-summary">Launch of Digital India initiative, Aadhaar system, UPI payments, and
+                            Jan Dhan accounts transform India into a digitally connected nation and global leader in
+                            fintech innovation.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">2015-2020 ईस्वी</div>
+                        <div class="event-title">डिजिटल इंडिया क्रांति</div>
+                        <div class="event-period contemporary">समकालीन भारत</div>
+                        <div class="event-summary">डिजिटल इंडिया पहल, आधार सिस्टम, यूपीआई भुगतान, और जन धन खातों के
+                            शुभारंभ ने भारत को एक डिजिटल रूप से जुड़े राष्ट्र और फिनटेक नवाचार में वैश्विक नेता में बदल
+                            दिया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                The Digital India initiative launched in 2015 aimed to transform India into a digitally
+                                empowered society. Key components included Aadhaar (world's largest biometric ID
+                                system), UPI (Unified Payments Interface) revolutionizing digital payments, Jan Dhan
+                                accounts for financial inclusion, and widespread internet connectivity. The 2016
+                                demonetization further accelerated digital adoption, making India a global leader in
+                                digital payments and fintech innovation.
+                            </div>
+                            <div class="hindi-content">
+                                2015 में शुरू की गई डिजिटल इंडिया पहल का उद्देश्य भारत को एक डिजिटल रूप से सशक्त समाज
+                                में बदलना था। मुख्य घटकों में आधार (दुनिया की सबसे बड़ी बायोमेट्रिक आईडी सिस्टम), यूपीआई
+                                (यूनिफाइड पेमेंट्स इंटरफेस) जो डिजिटल भुगतान में क्रांति लाया, वित्तीय समावेशन के लिए जन
+                                धन खाते, और व्यापक इंटरनेट कनेक्टिविटी शामिल थी।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Aadhaar Launch</div>
+                                        <div class="sub-event-date">2010-2016</div>
+                                        <div class="sub-event-desc">World's largest biometric identity system covers
+                                            over 1.3 billion Indians, enabling digital governance.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">आधार लॉन्च</div>
+                                        <div class="sub-event-date">2010-2016</div>
+                                        <div class="sub-event-desc">दुनिया की सबसे बड़ी बायोमेट्रिक पहचान प्रणाली 1.3
+                                            बिलियन से अधिक भारतीयों को कवर करती है, डिजिटल शासन को सक्षम बनाती है।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">UPI Revolution</div>
+                                        <div class="sub-event-date">2016</div>
+                                        <div class="sub-event-desc">Unified Payments Interface transforms digital
+                                            payments, making India a global leader in real-time payments.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">यूपीआई क्रांति</div>
+                                        <div class="sub-event-date">2016</div>
+                                        <div class="sub-event-desc">यूनिफाइड पेमेंट्स इंटरफेस ने डिजिटल भुगतान को बदल
+                                            दिया, भारत को रियल-टाइम भुगतान में वैश्विक नेता बनाया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Demonetization</div>
+                                        <div class="sub-event-date">November 8, 2016</div>
+                                        <div class="sub-event-desc">High-value currency notes are demonetized,
+                                            accelerating the shift towards digital payments.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">नोटबंदी</div>
+                                        <div class="sub-event-date">8 नवंबर, 2016</div>
+                                        <div class="sub-event-desc">उच्च मूल्य की मुद्रा नोटों को अवैध घोषित किया गया,
+                                            डिजिटल भुगतान की ओर बदलाव को तेज किया।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chandrayaan-3 -->
+            <div class="timeline-event left" onclick="toggleDetails(this)">
+                <div class="event-marker contemporary"></div>
+                <div class="event-card contemporary">
+                    <div class="english-content">
+                        <div class="event-date">August 23, 2023</div>
+                        <div class="event-title">Chandrayaan-3 Moon Landing</div>
+                        <div class="event-period contemporary">Contemporary India</div>
+                        <div class="event-summary">India becomes the fourth country to successfully land on the Moon and
+                            the first to land near the lunar south pole, marking a historic achievement in space
+                            exploration and establishing India as a major space power.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">23 अगस्त, 2023</div>
+                        <div class="event-title">चंद्रयान-3 चांद पर लैंडिंग</div>
+                        <div class="event-period contemporary">समकालीन भारत</div>
+                        <div class="event-summary">भारत चांद पर सफलतापूर्वक लैंड करने वाला चौथा देश बना और चंद्र दक्षिणी
+                            ध्रुव के पास लैंड करने वाला पहला देश बना, अंतरिक्ष अन्वेषण में एक ऐतिहासिक उपलब्धि हासिल की
+                            और भारत को एक प्रमुख अंतरिक्ष शक्ति के रूप में स्थापित किया।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                Chandrayaan-3's successful soft landing on the Moon's south pole on August 23, 2023,
+                                made India the fourth country after the US, Russia, and China to achieve a lunar
+                                landing. The mission's Vikram lander and Pragyan rover conducted scientific experiments
+                                and discovered water ice and other elements. This achievement boosted India's space
+                                program credibility and positioned ISRO as a cost-effective space agency capable of
+                                complex missions.
+                            </div>
+                            <div class="hindi-content">
+                                23 अगस्त, 2023 को चांद के दक्षिणी ध्रुव पर चंद्रयान-3 की सफल सॉफ्ट लैंडिंग ने भारत को
+                                अमेरिका, रूस और चीन के बाद चंद्र लैंडिंग हासिल करने वाला चौथा देश बनाया। मिशन के विक्रम
+                                लैंडर और प्रज्ञान रोवर ने वैज्ञानिक प्रयोग किए और पानी की बर्फ और अन्य तत्वों की खोज की।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Launch Success</div>
+                                        <div class="sub-event-date">July 14, 2023</div>
+                                        <div class="sub-event-desc">Chandrayaan-3 is successfully launched from
+                                            Sriharikota using the LVM3 rocket.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">लॉन्च सफलता</div>
+                                        <div class="sub-event-date">14 जुलाई, 2023</div>
+                                        <div class="sub-event-desc">चंद्रयान-3 को एलवीएम3 रॉकेट का उपयोग करके
+                                            श्रीहरिकोटा से सफलतापूर्वक लॉन्च किया गया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Historic Landing</div>
+                                        <div class="sub-event-date">August 23, 2023</div>
+                                        <div class="sub-event-desc">Vikram lander successfully touches down near the
+                                            Moon's south pole, making India the first to achieve this feat.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">ऐतिहासिक लैंडिंग</div>
+                                        <div class="sub-event-date">23 अगस्त, 2023</div>
+                                        <div class="sub-event-desc">विक्रम लैंडर चांद के दक्षिणी ध्रुव के पास
+                                            सफलतापूर्वक उतरा, भारत को यह उपलब्धि हासिल करने वाला पहला देश बनाया।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Scientific Discoveries</div>
+                                        <div class="sub-event-date">August-September 2023</div>
+                                        <div class="sub-event-desc">Pragyan rover conducts experiments and confirms the
+                                            presence of sulfur and other elements on the lunar surface.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">वैज्ञानिक खोजें</div>
+                                        <div class="sub-event-date">अगस्त-सितंबर 2023</div>
+                                        <div class="sub-event-desc">प्रज्ञान रोवर ने प्रयोग किए और चंद्र सतह पर सल्फर और
+                                            अन्य तत्वों की उपस्थिति की पुष्टि की।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Events (2024-2025) -->
+            <div class="timeline-event right" onclick="toggleDetails(this)">
+                <div class="event-marker contemporary"></div>
+                <div class="event-card contemporary">
+                    <div class="english-content">
+                        <div class="event-date">2024-2025 CE</div>
+                        <div class="event-title">India's Future Milestones</div>
+                        <div class="event-period contemporary">Contemporary India</div>
+                        <div class="event-summary">India continues its journey as a global power with achievements in
+                            space exploration, renewable energy, semiconductor manufacturing, and technological
+                            innovation, positioning itself as a developed nation by 2047.</div>
+                    </div>
+                    <div class="hindi-content">
+                        <div class="event-date">2024-2025 ईस्वी</div>
+                        <div class="event-title">भारत के भविष्य के मील के पत्थर</div>
+                        <div class="event-period contemporary">समकालीन भारत</div>
+                        <div class="event-summary">भारत अंतरिक्ष अन्वेषण, नवीकरणीय ऊर्जा, सेमीकंडक्टर निर्माण, और तकनीकी
+                            नवाचार में उपलब्धियों के साथ एक वैश्विक शक्ति के रूप में अपनी यात्रा जारी रखता है, 2047 तक
+                            खुद को एक विकसित राष्ट्र के रूप में स्थापित करता है।</div>
+                    </div>
+                    <button class="expand-btn">Learn More ▼</button>
+                    <div class="event-details">
+                        <div class="event-details-content">
+                            <div class="english-content">
+                                India's vision for 2024-2025 includes becoming a $5 trillion economy, achieving 500 GW
+                                renewable energy capacity, launching the Gaganyaan human spaceflight mission,
+                                establishing semiconductor manufacturing hubs, and leading global initiatives in AI and
+                                quantum computing. The country aims to become a developed nation by 2047, marking 100
+                                years of independence.
+                            </div>
+                            <div class="hindi-content">
+                                2024-2025 के लिए भारत की दृष्टि में $5 ट्रिलियन अर्थव्यवस्था बनना, 500 GW नवीकरणीय ऊर्जा
+                                क्षमता हासिल करना, गगनयान मानव अंतरिक्ष उड़ान मिशन लॉन्च करना, सेमीकंडक्टर निर्माण हब
+                                स्थापित करना, और AI और क्वांटम कंप्यूटिंग में वैश्विक पहल का नेतृत्व करना शामिल है।
+                            </div>
+                            <div class="sub-events">
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Gaganyaan Mission</div>
+                                        <div class="sub-event-date">2025</div>
+                                        <div class="sub-event-desc">India's first human spaceflight mission will make it
+                                            the fourth country to independently send humans to space.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">गगनयान मिशन</div>
+                                        <div class="sub-event-date">2025</div>
+                                        <div class="sub-event-desc">भारत का पहला मानव अंतरिक्ष उड़ान मिशन इसे स्वतंत्र
+                                            रूप से मनुष्यों को अंतरिक्ष में भेजने वाला चौथा देश बनाएगा।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Renewable Energy Target</div>
+                                        <div class="sub-event-date">2025</div>
+                                        <div class="sub-event-desc">India aims to achieve 500 GW renewable energy
+                                            capacity, leading global climate action efforts.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">नवीकरणीय ऊर्जा लक्ष्य</div>
+                                        <div class="sub-event-date">2025</div>
+                                        <div class="sub-event-desc">भारत का लक्ष्य 500 GW नवीकरणीय ऊर्जा क्षमता हासिल
+                                            करना है, वैश्विक जलवायु कार्रवाई प्रयासों का नेतृत्व करना है।</div>
+                                    </div>
+                                </div>
+                                <div class="sub-event contemporary">
+                                    <div class="english-content">
+                                        <div class="sub-event-title">Viksit Bharat 2047</div>
+                                        <div class="sub-event-date">2047</div>
+                                        <div class="sub-event-desc">India's vision to become a developed nation by 2047,
+                                            marking 100 years of independence.</div>
+                                    </div>
+                                    <div class="hindi-content">
+                                        <div class="sub-event-title">विकसित भारत 2047</div>
+                                        <div class="sub-event-date">2047</div>
+                                        <div class="sub-event-desc">स्वतंत्रता के 100 साल पूरे होने पर 2047 तक विकसित
+                                            राष्ट्र बनने का भारत का दृष्टिकोण।</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color ancient"></div>
+                <span class="english-content">Ancient Period</span>
+                <span class="hindi-content">प्राचीन काल</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color classical"></div>
+                <span class="english-content">Classical Period</span>
+                <span class="hindi-content">शास्त्रीय काल</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color medieval"></div>
+                <span class="english-content">Medieval Period</span>
+                <span class="hindi-content">मध्यकालीन काल</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color mughal"></div>
+                <span class="english-content">Mughal Period</span>
+                <span class="hindi-content">मुगल काल</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color colonial"></div>
+                <span class="english-content">Colonial Period</span>
+                <span class="hindi-content">औपनिवेशिक काल</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color independence"></div>
+                <span class="english-content">Independence Era</span>
+                <span class="hindi-content">स्वतंत्रता युग</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color modern"></div>
+                <span class="english-content">Modern India</span>
+                <span class="hindi-content">आधुनिक भारत</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color contemporary"></div>
+                <span class="english-content">Contemporary India</span>
+                <span class="hindi-content">समकालीन भारत</span>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
